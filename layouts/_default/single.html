@@ -1,0 +1,23 @@
+{{ define "main" }}
+<article class="comic-container">
+  <h1>{{ .Title }}</h1>
+  
+  <div class="comic-image">
+    <img src="{{ .Params.comic_file | relURL }}" alt="{{ .Title }}" style="max-width:100%; height:auto;">
+  </div>
+
+  <nav class="comic-nav">
+    <a href="#"><img src="{{ .Site.Params.icon_first | relURL }}" alt="First"></a>
+    <a href="#"><img src="{{ .Site.Params.icon_prev | relURL }}" alt="Previous"></a>
+    <a href="#"><img src="{{ .Site.Params.icon_random | relURL }}" alt="Random"></a>
+    <a href="#"><img src="{{ .Site.Params.icon_next | relURL }}" alt="Next"></a>
+    <a href="#"><img src="{{ .Site.Params.icon_last | relURL }}" alt="Last"></a>
+  </nav>
+
+  <section class="author-notes">
+    <h3>Notizen des Autors</h3>
+    <p>{{ if eq .Site.Language.Lang "de" }}{{ .Params.note_de }}{{ else }}{{ .Params.note_en }}{{ end }}</p>
+  </section>
+
+  </article>
+{{ end }}
