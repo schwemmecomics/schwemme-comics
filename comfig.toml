@@ -1,7 +1,7 @@
 baseURL = "https://schwemmecomics.github.io/schwemme-comic/"
 languageCode = "de-de"
 title = "Schwemme Comics"
-theme = "schwemme-theme"
+#theme = "schwemme-theme"
 
 # Spracheinstellungen
 defaultContentLanguage = "de"
