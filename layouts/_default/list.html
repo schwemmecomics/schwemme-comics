@@ -1,12 +1,17 @@
 {{ define "main" }}
-<section class="archive-container">
+<section class="archive-list">
   <h1>{{ .Title }}</h1>
-  <ul style="list-style: none; padding: 0;">
+  <div class="archive-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
     {{ range .Pages }}
-      <li style="margin: 10px 0;">
-        <a href="{{ .Permalink }}">{{ .Date.Format "02.01.2006" }} - {{ .Title }}</a>
-      </li>
+      <div class="archive-entry" style="border: 1px solid #ccc; padding: 10px; width: 200px;">
+        <a href="{{ .Permalink }}">
+          {{ if .Params.comic_file }}
+            <img src="{{ .Params.comic_file | absURL }}" style="width: 100%; height: auto;">
+          {{ end }}
+          <p>{{ .Title }}</p>
+        </a>
+      </div>
     {{ end }}
-  </ul>
+  </div>
 </section>
 {{ end }}
