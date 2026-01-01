@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article class="character-page">
+  <h1>{{ .Title }}</h1>
+  <img src="{{ .Params.image | absURL }}" style="max-width: 100%; height: auto; border: 2px solid #333;">
+  <div class="content">
+    {{ .Content }}
+  </div>
+  <p><a href="/characters/">Zurück zur Übersicht</a></p>
+</article>
+{{ end }}
