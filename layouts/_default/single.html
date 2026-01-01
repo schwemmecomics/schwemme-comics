@@ -7,8 +7,10 @@
   </div>
 
   <nav class="comic-nav">
-    {{ $first := (where .Site.RegularPages "Section" "comics").Reverse.Next (where .Site.RegularPages "Section" "comics") }}
-    <a href="{{ (index (where .Site.RegularPages "Section" "comics" | first 1) 0).Permalink }}"><img src="{{ .Site.Params.icon_first | relURL }}" alt="First"></a>
+    {{ $comics := where .Site.RegularPages "Section" "comics" }}
+    {{ if $comics }}
+      <a href="{{ (index $comics.ByDate 0).Permalink }}"><img src="{{ .Site.Params.icon_first | relURL }}" alt="First"></a>
+    {{ end }}
     
     {{ if .PrevInSection }}
       <a href="{{ .PrevInSection.Permalink }}"><img src="{{ .Site.Params.icon_prev | relURL }}" alt="Previous"></a>
@@ -24,25 +26,14 @@
       <img src="{{ .Site.Params.icon_next | relURL }}" alt="Next" style="opacity: 0.3;">
     {{ end }}
 
-    <a href="{{ (index (where .Site.RegularPages "Section" "comics" | last 1) 0).Permalink }}"><img src="{{ .Site.Params.icon_last | relURL }}" alt="Last"></a>
+    {{ if $comics }}
+      <a href="{{ (index $comics.ByDate.Reverse 0).Permalink }}"><img src="{{ .Site.Params.icon_last | relURL }}" alt="Last"></a>
+    {{ end }}
   </nav>
 
   <section class="author-notes">
     <h3>{{ if eq .Site.Language.Lang "de" }}Notizen des Autors{{ else }}Author's Notes{{ end }}</h3>
-    <div class="notes-content">
-      <p>{{ if eq .Site.Language.Lang "de" }}{{ .Params.note_de }}{{ else }}{{ .Params.note_en }}{{ end }}</p>
-      <div class="additional-content">
-        {{ .Content }} </div>
-    </div>
+    <p>{{ if eq .Site.Language.Lang "de" }}{{ .Params.note_de }}{{ else }}{{ .Params.note_en }}{{ end }}</p>
   </section>
-
-  <hr>
-
-  <section class="comments">
-    <h3>Kommentare</h3>
-    <div id="disqus_thread"></div>
-    <p><em>(Hier binden wir gleich ein System wie Disqus oder Utterances ein)</em></p>
-  </section>
-
 </article>
 {{ end }}
