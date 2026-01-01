@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="archive-container">
+  <h1>{{ .Title }}</h1>
+  <ul style="list-style: none; padding: 0;">
+    {{ range .Pages }}
+      <li style="margin: 10px 0;">
+        <a href="{{ .Permalink }}">{{ .Date.Format "02.01.2006" }} - {{ .Title }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+{{ end }}
