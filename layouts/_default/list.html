@@ -1,15 +1,26 @@
 {{ define "main" }}
-<section class="archive-list">
+<section class="list-container">
   <h1>{{ .Title }}</h1>
-  <div class="archive-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+  <div class="content-display" style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
     {{ range .Pages }}
-      <div class="archive-entry" style="border: 1px solid #ccc; padding: 10px; width: 200px;">
-        <a href="{{ .Permalink }}">
-          {{ if .Params.comic_file }}
-            <img src="{{ .Params.comic_file | absURL }}" style="width: 100%; height: auto;">
+      <div class="entry" style="max-width: 800px; width: 100%;">
+        
+        {{ if eq .Section "characters" }}
+          {{ if .Params.image }}
+            <img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" style="width: 100%; height: auto; border: 1px solid #eee; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
           {{ end }}
-          <p>{{ .Title }}</p>
-        </a>
+          <h2 style="margin-top: 10px;">{{ .Title }}</h2>
+        
+        {{ else }}
+          <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">
+            {{ if .Params.comic_file }}
+              <img src="{{ .Params.comic_file | absURL }}" style="width: 200px; height: auto;">
+            {{ end }}
+            <p>{{ .Title }} ({{ .Date.Format "02.01.2006" }})</p>
+          </a>
+        {{ end }}
+
       </div>
     {{ end }}
   </div>
