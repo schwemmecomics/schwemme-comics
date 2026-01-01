@@ -7,17 +7,42 @@
   </div>
 
   <nav class="comic-nav">
-    <a href="#"><img src="{{ .Site.Params.icon_first | relURL }}" alt="First"></a>
-    <a href="#"><img src="{{ .Site.Params.icon_prev | relURL }}" alt="Previous"></a>
-    <a href="#"><img src="{{ .Site.Params.icon_random | relURL }}" alt="Random"></a>
-    <a href="#"><img src="{{ .Site.Params.icon_next | relURL }}" alt="Next"></a>
-    <a href="#"><img src="{{ .Site.Params.icon_last | relURL }}" alt="Last"></a>
+    {{ $first := (where .Site.RegularPages "Section" "comics").Reverse.Next (where .Site.RegularPages "Section" "comics") }}
+    <a href="{{ (index (where .Site.RegularPages "Section" "comics" | first 1) 0).Permalink }}"><img src="{{ .Site.Params.icon_first | relURL }}" alt="First"></a>
+    
+    {{ if .PrevInSection }}
+      <a href="{{ .PrevInSection.Permalink }}"><img src="{{ .Site.Params.icon_prev | relURL }}" alt="Previous"></a>
+    {{ else }}
+      <img src="{{ .Site.Params.icon_prev | relURL }}" alt="Previous" style="opacity: 0.3;">
+    {{ end }}
+
+    <a href="/archive"><img src="{{ .Site.Params.icon_random | relURL }}" alt="Random"></a>
+
+    {{ if .NextInSection }}
+      <a href="{{ .NextInSection.Permalink }}"><img src="{{ .Site.Params.icon_next | relURL }}" alt="Next"></a>
+    {{ else }}
+      <img src="{{ .Site.Params.icon_next | relURL }}" alt="Next" style="opacity: 0.3;">
+    {{ end }}
+
+    <a href="{{ (index (where .Site.RegularPages "Section" "comics" | last 1) 0).Permalink }}"><img src="{{ .Site.Params.icon_last | relURL }}" alt="Last"></a>
   </nav>
 
   <section class="author-notes">
-    <h3>Notizen des Autors</h3>
-    <p>{{ if eq .Site.Language.Lang "de" }}{{ .Params.note_de }}{{ else }}{{ .Params.note_en }}{{ end }}</p>
+    <h3>{{ if eq .Site.Language.Lang "de" }}Notizen des Autors{{ else }}Author's Notes{{ end }}</h3>
+    <div class="notes-content">
+      <p>{{ if eq .Site.Language.Lang "de" }}{{ .Params.note_de }}{{ else }}{{ .Params.note_en }}{{ end }}</p>
+      <div class="additional-content">
+        {{ .Content }} </div>
+    </div>
   </section>
 
-  </article>
+  <hr>
+
+  <section class="comments">
+    <h3>Kommentare</h3>
+    <div id="disqus_thread"></div>
+    <p><em>(Hier binden wir gleich ein System wie Disqus oder Utterances ein)</em></p>
+  </section>
+
+</article>
 {{ end }}
