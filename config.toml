@@ -15,17 +15,17 @@ defaultContentLanguage = "de"
 
 [params]
   description = "Comics von Ernestito"
-  header_image = "images/header.png"
+  header_image = "/images/header.png"
   # Akzentfarben
   color_accent = "#004488" # Dunkelblau
   color_hover = "#FFD700"  # Goldgelb
   
   # Navigation Icons
-  icon_first = "images/first.png"
-  icon_prev = "images/previous.png"
-  icon_random = "images/random.png"
-  icon_next = "images/next.png"
-  icon_last = "images/last.png"
+  icon_first = "/images/first.png"
+  icon_prev = "/images/previous.png"
+  icon_random = "/images/random.png"
+  icon_next = "/images/next.png"
+  icon_last = "/images/last.png"
 
   # Disclaimer Footer
   disclaimer = "Alle Charaktere und Ereignisse in diesem Comic sind fiktiv. Ähnlichkeiten mit lebenden oder verstorbenen Personen oder Ereignissen sind rein zufällig."
