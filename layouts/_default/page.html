@@ -1,8 +1,13 @@
 {{ define "main" }}
-<section style="max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; font-family: sans-serif;">
-    <h1>{{ .Title }}</h1>
-    <div class="page-content">
+<article style="max-width: 750px; margin: 40px auto; padding: 0 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.8; color: #333;">
+    
+    <header style="margin-bottom: 40px; border-bottom: 3px solid #eee; padding-bottom: 20px;">
+        <h1 style="font-size: 2.5rem; color: #222;">{{ .Title }}</h1>
+    </header>
+
+    <div class="page-content" style="font-size: 1.1rem;">
         {{ .Content }}
     </div>
-</section>
+
+</article>
 {{ end }}
