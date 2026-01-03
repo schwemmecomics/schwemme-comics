@@ -2,6 +2,9 @@
 title: "About Me"
 layout: "page"
 ---
+
+<img src="/images/mein-profil.jpg" alt="Ernestito photographed by Mike" style="float: right; margin-left: 20px; margin-bottom: 20px; border-radius: 50%; max-width: 200px; border: 3px solid #eee;">
+
 # Welcome to Tales From The Schwemme!
 A collection of sequential art, which tries to commemorate anecdotes and peculiarities from the **Schwemme** and the people there.
 This is a steam of conciousnes, which comprises events, quotes, other media, jokes and situational comedy from the authors point of view. 
