@@ -10,27 +10,23 @@
       {{ end }}{{ end }}
     </div>
 
-  {{ else if eq .Section "creative" }}
-    {{ $creativeDir := "static/images/creative/" }}
-    {{ $sections := readDir $creativeDir }}
-    
-    {{ range $sections }}
-      {{ if .IsDir }}
-        <section class="creative-section" style="margin-bottom: 60px;">
-          <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; text-transform: capitalize;">
-            {{ replace .Name "-" " " }} </h2>
-          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
-            {{ $path := printf "static/images/creative/%s/" .Name }}
-            {{ range (readDir $path) }}
-              {{ if (findRE `\.(png|jpg|jpeg|webp)$` .Name) }}
-                <img src="{{ (printf "/images/creative/%s/%s" $.Name .Name) | absURL }}" 
-                     style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-              {{ end }}
-            {{ end }}
+ {{ else if eq .Section "creative" }}
+  {{ range .Sections }}
+    <section class="creative-section" style="margin-bottom: 60px;">
+      <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px; text-transform: capitalize;">
+        {{ .Title }}
+      </h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+        {{ range .Resources.ByType "image" }}
+          <div class="creative-item">
+            <img src="{{ .RelPermalink }}" 
+                 alt="Artwork" 
+                 style="width: 100%; height: auto; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
           </div>
-        </section>
-      {{ end }}
-    {{ end }}
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
 
   {{ else }}
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
