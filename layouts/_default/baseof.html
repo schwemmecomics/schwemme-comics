@@ -13,14 +13,9 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="{{ .Site.Params.header_image | relURL }}" alt="Logo" style="max-width: 800px; width: 100%;">
-        <nav class="nav-main">
-            {{ range .Site.Menus.main }}
-            <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-            {{ end }}
-        </nav>
-    </header>
+   
+        {{ partial "header.html" . }}
+    
 
     <main>
         {{ block "main" . }}{{ end }}
