@@ -1,6 +1,6 @@
 ---
 title: "About Me"
-type: "page"
+layout: "page"
 ---
 Welcome to Tales From The Schwemme!
 A collection of sequential art, which tries to commemorate anecdotes and peculiarities from the Schwemme and the people there. 
