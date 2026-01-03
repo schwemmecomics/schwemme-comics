@@ -3,6 +3,8 @@ title: "Über mich"
 layout: "page"
 ---
 
+<img src="/images/mein-profil.jpg" alt="Ernestito fotografiert von Mike" style="float: right; margin-left: 20px; margin-bottom: 20px; border-radius: 50%; max-width: 200px; border: 3px solid #eee;">
+
 # Willkommen zu Geschichten aus Der Schwemme!
 Eine Sammlung an sequentieller Kunst, die versucht Anekdoten aus der **Schwemme** und Eigenheiten der Schwemmlinge humorvoll festzuhalten. 
 Dies ist ein Bewusstseinsstrom in Comicform, der vergangene Ereignisse, Zitate, andere Medien, Witze und Situationskomik aus Sicht des Autors behandelt.
