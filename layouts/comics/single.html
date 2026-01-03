@@ -68,6 +68,20 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
       data-lang="{{ .Lang | default "de" }}"
     ></div>
 
+<script>
+  // Dieser kleine Zusatz zwingt Cusdis, die Sprache neu zu bewerten
+  window.CUSDIS_LOCALE = {
+    "powered_by": "Kommentare betrieben mit Cusdis",
+    "post_comment": "Kommentar abschicken",
+    "placeholder": "Schreib etwas...",
+    "email": "Email (optional)",
+    "nickname": "Spitzname",
+    "reply": "Antworten",
+    "mod_badge": "Autor",
+    "load_more": "Mehr laden"
+  }
+</script>
+    
     {{/* Das Cusdis-Skript */}}
     <script async defer src="{{ "js/cusdis.js" | relURL }}"></script>
 </div>
