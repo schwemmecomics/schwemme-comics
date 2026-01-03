@@ -1,43 +1,44 @@
 {{ define "main" }}
-<section class="home-container" style="max-width: 900px; margin: 0 auto; text-align: center; padding: 20px;">
+<section class="home-container" style="max-width: 1000px; margin: 0 auto; text-align: center; padding: 20px;">
     
-    {{/* Wir holen uns den aktuellsten Comic */}}
+    {{/* Den absolut neuesten Comic holen */}}
     {{ $comics := where .Site.RegularPages "Section" "comics" }}
     {{ $latest := index $comics.ByDate.Reverse 0 }}
 
     {{ if $latest }}
-        <div class="latest-comic">
-            <h2 style="margin-bottom: 20px;">Neuester Comic: {{ $latest.Title }}</h2>
+        <div class="featured-comic" style="margin-bottom: 60px;">
+            <h2 style="font-size: 2em; margin-bottom: 10px;">Neuester Strip: {{ $latest.Title }}</h2>
+            <p style="color: #666; margin-bottom: 20px;">Veröffentlicht am {{ $latest.Date.Format "02.01.2006" }}</p>
             
             <a href="{{ $latest.Permalink }}">
-                {{/* Wir suchen das Bild im Ordner des neuesten Comics */}}
                 {{ $comicImg := $latest.Resources.GetMatch (printf "comic.%s.*" .Lang) | default ($latest.Resources.GetMatch "comic.*") }}
                 {{ if $comicImg }}
-                    <img src="{{ $comicImg.RelPermalink }}" alt="{{ $latest.Title }}" style="max-width: 100%; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.2); border-radius: 8px;">
+                    {{/* Den Haupt-Comic lassen wir groß, aber optimieren ihn für die Web-Ansicht */}}
+                    {{ $large := $comicImg.Resize "1200x" }}
+                    <img src="{{ $large.RelPermalink }}" alt="{{ $latest.Title }}" style="max-width: 100%; height: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-radius: 12px;">
                 {{ end }}
             </a>
-
-            <div style="margin-top: 20px;">
-                <a href="{{ $latest.Permalink }}" style="display: inline-block; padding: 10px 20px; background: #333; color: #fff; text-decoration: none; border-radius: 5px;">Zu den Kommentaren & Notizen</a>
-            </div>
         </div>
-    {{ else }}
-        <p>Noch keine Comics veröffentlicht.</p>
     {{ end }}
 
-    <hr style="margin: 50px 0; border: 0; border-top: 1px solid #eee;">
+    <hr style="border: 0; border-top: 2px solid #f0f0f0; margin: 60px 0;">
 
-    {{/* Galerie der älteren Comics */}}
-    <h3>Archiv</h3>
-    <div class="comic-gallery" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; margin-top: 20px;">
+    {{/* Archiv-Galerie mit automatischem Zuschnitt */}}
+    <h3 style="margin-bottom: 30px;">Bisherige Strips</h3>
+    <div class="comic-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px;">
         {{ range (after 1 $comics.ByDate.Reverse) }}
-            <div class="gallery-item" style="border: 1px solid #eee; padding: 10px; border-radius: 5px;">
+            <div class="archive-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.2s;">
                 <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">
-                    {{ $thumb := .Resources.GetMatch "comic.*" }}
-                    {{ if $thumb }}
-                        <img src="{{ $thumb.RelPermalink }}" style="width: 100%; height: auto; border-radius: 3px;">
+                    {{ $thumbRaw := .Resources.GetMatch "comic.*" }}
+                    {{ if $thumbRaw }}
+                        {{/* Hier passiert die Magie: Zuschnitt auf 400x300 Pixel, Fokus auf die Mitte */}}
+                        {{ $thumb := $thumbRaw.Fill "400x300 Center" }}
+                        <img src="{{ $thumb.RelPermalink }}" style="width: 100%; height: auto; display: block;">
                     {{ end }}
-                    <p style="font-size: 0.9em; margin-top: 5px;">{{ .Title }}</p>
+                    <div style="padding: 15px;">
+                        <strong style="display: block; margin-bottom: 5px;">{{ .Title }}</strong>
+                        <small style="color: #888;">#{{ .File.ContentBaseName }}</small>
+                    </div>
                 </a>
             </div>
         {{ end }}
