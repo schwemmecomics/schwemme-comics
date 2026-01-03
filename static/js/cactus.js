@@ -17,7 +17,8 @@ const initComments = (config) => {
     section: section,
   });
 
-  iframe.src = `https://cactus.chat/display.html?${params.toString()}`;
+iframe.src = `https://cactus.chat/display.html?${params.toString()}`;
+iframe.allow = "referrer; clipboard-write"; // Erlaubt dem Iframe mehr Rechte
   iframe.style.width = "100%";
   iframe.style.height = "500px";
   iframe.style.border = "none";
