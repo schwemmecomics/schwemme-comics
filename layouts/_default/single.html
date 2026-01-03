@@ -18,7 +18,9 @@
       <img src="{{ .Site.Params.icon_prev | relURL }}" alt="Previous" style="opacity: 0.3;">
     {{ end }}
 
-    <a href="/archive"><img src="{{ .Site.Params.icon_random | relURL }}" alt="Random"></a>
+    <a href="#" id="random-btn">
+    <img src="{{ .Site.Params.icon_random | relURL }}" alt="Random">
+</a>
 
     {{ if .NextInSection }}
       <a href="{{ .NextInSection.Permalink }}"><img src="{{ .Site.Params.icon_next | relURL }}" alt="Next"></a>
@@ -36,4 +38,22 @@
     <p>{{ if eq .Site.Language.Lang "de" }}{{ .Params.note_de }}{{ else }}{{ .Params.note_en }}{{ end }}</p>
   </section>
 </article>
+
+<script>
+  // Hugo erstellt hier eine Liste aller Comic-Seiten
+  const comicUrls = [
+    {{ range (where .Site.RegularPages "Section" "comics") }}
+      "{{ .Permalink }}",
+    {{ end }}
+  ];
+
+  document.getElementById("random-btn").addEventListener("click", function(e) {
+    e.preventDefault(); // Verhindert, dass die Seite einfach nur nach oben springt
+    if (comicUrls.length > 0) {
+      // Wählt eine zufällige URL aus der Liste aus
+      const randomComic = comicUrls[Math.floor(Math.random() * comicUrls.length)];
+      window.location.href = randomComic;
+    }
+  });
+</script>
 {{ end }}
