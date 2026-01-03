@@ -1,6 +1,6 @@
 ---
 title: "Über mich"
-type: "page"
+layout: "page"
 ---
 
 Willkommen zu Geschichten aus Der Schwemme!
