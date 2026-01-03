@@ -1,0 +1,26 @@
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+  <div class="logo">
+    <a href="{{ .Site.BaseURL | relLangURL }}">
+      <img src="{{ "/images/header.png" | absURL }}" alt="Schwemme Comics" style="max-height: 100px;">
+    </a>
+  </div>
+
+  <nav class="language-switch" style="font-family: sans-serif; font-weight: bold;">
+    {{ $currentLang := .Lang }}
+    {{ range .Site.Languages }}
+      {{ if eq .Lang $currentLang }}
+        <span style="color: #ff4500; padding: 0 5px;">{{ .LanguageName }}</span>
+      {{ else }}
+        {{ $found := false }}
+        {{ range $.Translations }}
+          <a href="{{ .Permalink }}" style="text-decoration: none; color: #333; padding: 0 5px;">{{ .LanguageName }}</a>
+          {{ $found = true }}
+        {{ end }}
+        {{ if not $found }}
+          <a href="/{{ .Lang }}/" style="text-decoration: none; color: #333; padding: 0 5px; opacity: 0.6;">{{ .LanguageName }}</a>
+        {{ end }}
+      {{ end }}
+      {{ if (lt .Weight 2) }} | {{ end }}
+    {{ end }}
+  </nav>
+</header>
