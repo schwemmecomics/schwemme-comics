@@ -3,6 +3,22 @@
 <head>
     <meta charset="utf-8">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
+
+    <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
+    <meta property="og:description" content="Schau dir diesen Comic von Ernestito an!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ .Permalink }}">
+
+    {{/* Bild-Vorschau Logik */}}
+    {{ $comicImg := .Resources.GetMatch "comic.*" }}
+    {{ if $comicImg }}
+        <meta property="og:image" content="{{ $comicImg.Permalink }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="{{ $comicImg.Permalink }}">
+    {{ else }}
+        {{/* Optional: Ein Standardbild, falls kein Comic-Bild gefunden wird (z.B. dein Profilbild) */}}
+        <meta property="og:image" content="{{ "/images/no-comic.jpg" | absURL }}">
+    {{ end }}
     <style>
         body { font-family: sans-serif; text-align: center; background: white; color: #333; margin: 0; padding: 0; }
         header { padding: 20px; border-bottom: 2px solid {{ .Site.Params.color_accent }}; }
