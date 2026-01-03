@@ -3,7 +3,7 @@ title: "About Me"
 layout: "page"
 ---
 
-<img src="{{ "images/mein-profil.jpg" | relURL }}" style="float:right; width:200px;">
+<img src="{{ "images/mein-profil.jpg" | relURL }}" alt="Profilbild" style="float: right; margin-left: 20px; width: 200px; height: auto;">
 
 # Welcome to Tales From The Schwemme!
 A collection of sequential art, which tries to commemorate anecdotes and peculiarities from the **Schwemme** and the people there.
