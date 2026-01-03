@@ -1,0 +1,24 @@
+{{ $pages := (where .Site.RegularPages "Section" "comics").ByDate }}
+<nav class="comic-navigation" style="display: flex; justify-content: center; gap: 10px; align-items: center;">
+    
+    {{/* First */}}
+    <a href="{{ (index $pages 0).Permalink }}"><img src="{{ "/images/first.png" | relURL }}" style="width: 40px;"></a>
+
+    {{/* Previous */}}
+    {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.Permalink }}"><img src="{{ "/images/previous.png" | relURL }}" style="width: 40px;"></a>
+    {{ end }}
+
+    {{/* Random */}}
+    {{ $randomPage := index (shuffle $pages) 0 }}
+    <a href="{{ $randomPage.Permalink }}"><img src="{{ "/images/random.png" | relURL }}" style="width: 40px;"></a>
+
+    {{/* Next */}}
+    {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink }}"><img src="{{ "/images/next.png" | relURL }}" style="width: 40px;"></a>
+    {{ end }}
+
+    {{/* Last */}}
+    <a href="{{ (index $pages (sub (len $pages) 1)).Permalink }}"><img src="{{ "/images/last.png" | relURL }}" style="width: 40px;"></a>
+
+</nav>
