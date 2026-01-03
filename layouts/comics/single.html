@@ -23,14 +23,13 @@
     </div>
 
     {{/* Cactus Comments */}}
-<div class="comments-wrapper" style="margin-top: 60px; padding: 20px; border-top: 2px solid #eee; text-align: left;">
+<div class="comments-wrapper" style="margin-top: 60px; padding: 20px; border-top: 2px solid #eee;">
     <h3 style="text-align: center;">Kommentare</h3>
-    
     <div id="comment-section"></div>
 
-    {{/* Hier sind die korrigierten Links */}}
-    <script type="text/javascript" src="https://cdn.cactus.chat/cactus.js"></script>
-    <link rel="stylesheet" href="https://cdn.cactus.chat/style.css" type="text/css">
+    {{/* Lokale Pfade */}}
+    <script type="text/javascript" src="{{ "js/cactus.js" | relURL }}"></script>
+    <link rel="stylesheet" href="{{ "css/cactus.css" | relURL }}" type="text/css">
     
     <script>
         initComments({
