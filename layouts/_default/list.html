@@ -3,10 +3,18 @@
   <h1 style="text-align: center;">{{ .Title }}</h1>
 
   <div class="content-display">
-    
     {{ if or (eq .Section "characters") (eq .Section "creative") }}
-      {{ if .Sections }}
-        {{ range .Sections }}
+      
+      {{/* LOGIK: Wir suchen die Bilder-Quelle (immer die DE-Version) */}}
+      {{ $dataSource := . }}
+      {{ if .IsTranslated }}
+        {{ range .AllTranslations }}
+          {{ if eq .Lang "de" }}{{ $dataSource = . }}{{ end }}
+        {{ end }}
+      {{ end }}
+
+      {{ if $dataSource.Sections }}
+        {{ range $dataSource.Sections }}
           <section class="sub-section" style="margin-bottom: 60px; text-align: center;">
             <h2 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">{{ .Title }}</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
@@ -18,13 +26,14 @@
         {{ end }}
       {{ else }}
         <div style="display: flex; flex-direction: column; align-items: center; gap: 40px;">
-          {{ range .Resources.ByType "image" }}
+          {{ range $dataSource.Resources.ByType "image" }}
             <img src="{{ .RelPermalink }}" style="max-width: 800px; width: 100%; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
           {{ end }}
         </div>
       {{ end }}
 
     {{ else }}
+      {{/* Archiv-Ansicht für Comics */}}
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
         {{ range .Pages }}
           <div style="border: 1px solid #ccc; padding: 10px; width: 200px; text-align: center;">
