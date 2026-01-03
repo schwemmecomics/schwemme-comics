@@ -3,7 +3,7 @@ title: "Über mich"
 layout: "page"
 ---
 
-<img src="{{ "images/mein-profil.jpg" | relURL }}" alt="Profilbild" style="float: right; margin-left: 20px; width: 200px; height: auto;">
+<img src="/schwemme-comics/images/mein-profil.jpg" alt="Profilbild" style="float: right; margin-left: 20px; width: 200px; height: auto;">
 
 # Willkommen zu Geschichten aus Der Schwemme!
 Eine Sammlung an sequentieller Kunst, die versucht Anekdoten aus der **Schwemme** und Eigenheiten der Schwemmlinge humorvoll festzuhalten. 
