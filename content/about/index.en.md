@@ -3,7 +3,7 @@ title: "About Me"
 layout: "page"
 ---
 
-<img src="images/mein-profil.jpg" alt="real Life Ernestito" style="float: right; margin-left: 20px; margin-bottom: 20px; border-radius: 50%; max-width: 200px; border: 3px solid #eee;">
+<img src="{{ "images/mein-profil.jpg" | relURL }}" style="float:right; width:200px;">
 
 # Welcome to Tales From The Schwemme!
 A collection of sequential art, which tries to commemorate anecdotes and peculiarities from the **Schwemme** and the people there.
