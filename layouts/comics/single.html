@@ -70,6 +70,7 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
 
 <script>
   // Dieser kleine Zusatz zwingt Cusdis, die Sprache neu zu bewerten
+  {{ if eq .Lang "de" }}
   window.CUSDIS_LOCALE = {
     "powered_by": "Kommentare betrieben mit Cusdis",
     "post_comment": "Kommentar abschicken",
@@ -80,6 +81,18 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
     "mod_badge": "Autor",
     "load_more": "Mehr laden"
   }
+  {{ else }}
+  window.CUSDIS_LOCALE = {
+    "powered_by": "Comments powered by Cusdis",
+    "post_comment": "Submit",
+    "placeholder": "Write something...",
+    "email": "Email (optional)",
+    "nickname": "Nickname",
+    "reply": "Reply",
+    "mod_badge": "Author",
+    "load_more": "Load more"
+  }
+  {{ end }}
 </script>
     
     {{/* Das Cusdis-Skript */}}
