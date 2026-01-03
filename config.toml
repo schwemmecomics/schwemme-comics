@@ -6,12 +6,49 @@ title = "Schwemme Comics"
 # Spracheinstellungen
 defaultContentLanguage = "de"
 [languages]
-  [languages.de]
-    languageName = "Deutsch"
+  # --- DEUTSCH ---
+[languages.de]
+  languageName = "Deutsch"
+  weight = 1
+  # Hier kommen die deutschen Menüpunkte drunter:
+  [[languages.de.menu.main]]
+    name = "Archiv"
+    url = "/comics/"
     weight = 1
-  [languages.en]
-    languageName = "English"
+  [[languages.de.menu.main]]
+    name = "Charaktere"
+    url = "/characters/"
     weight = 2
+  [[languages.de.menu.main]]
+    name = "Kreativarbeit"
+    url = "/creative/"
+    weight = 3
+  [[languages.de.menu.main]]
+    name = "Über mich"
+    url = "/about/"
+    weight = 4
+
+# --- ENGLISCH ---
+[languages.en]
+  languageName = "English"
+  weight = 2
+  # Hier kommen die englischen Menüpunkte drunter:
+  [[languages.en.menu.main]]
+    name = "Archive"
+    url = "/en/comics/"
+    weight = 1
+  [[languages.en.menu.main]]
+    name = "Characters"
+    url = "/en/characters/"
+    weight = 2
+  [[languages.en.menu.main]]
+    name = "Creative Work"
+    url = "/en/creative/"
+    weight = 3
+  [[languages.en.menu.main]]
+    name = "About Me"
+    url = "/en/about/"
+    weight = 4
 
 [params]
   description = "Comics von Ernestito"
@@ -29,24 +66,3 @@ defaultContentLanguage = "de"
 
   # Disclaimer Footer
   disclaimer = "Alle Charaktere und Ereignisse in diesem Comic sind fiktiv. Ähnlichkeiten mit lebenden oder verstorbenen Personen oder Ereignissen sind rein zufällig."
-
-[[menu.main]]
-    name = "Comics"
-    url = "/comics/"
-    weight = 1
-[[menu.main]]
-    name = "Archiv"
-    url = "/archive/"
-    weight = 2
-[[menu.main]]
-    name = "Charaktere"
-    url = "/characters/"
-    weight = 3
-[[menu.main]]
-    name = "Kreativarbeit"
-    url = "/creative/"
-    weight = 4
-[[menu.main]]
-    name = "Über mich"
-    url = "/about/"
-    weight = 5
