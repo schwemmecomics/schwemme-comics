@@ -48,23 +48,21 @@
     </div>
 </div>
     
-    {{/* Cactus Comments */}}
-<div class="comments-wrapper" style="margin-top: 60px; padding: 20px; border-top: 2px solid #eee;">
+    {{/* Comments */}}
+<div class="comments-wrapper" style="margin-top: 60px; padding: 20px; border-top: 2px solid #eee; text-align: left;">
     <h3 style="text-align: center;">Kommentare</h3>
-    <div id="comment-section"></div>
-
-    {{/* Lokale Pfade */}}
-    <script type="text/javascript" src="{{ "js/cactus.js" | relURL }}"></script>
-    <link rel="stylesheet" href="{{ "css/cactus.css" | relURL }}" type="text/css">
     
-    <script>
-        initComments({
-            node: document.getElementById("comment-section"),
-            defaultSection: "comic-{{ .File.ContentBaseName }}",
-            serverUrl: "https://matrix.cactus.chat:8448",
-            siteName: "schwemme-comics"
-        })
-    </script>
+    <div id="cusdis_thread"
+      data-host="https://cusdis.com"
+      data-app-id="schwemme-comics"
+      data-page-id="{{ .File.ContentBaseName }}"
+      data-page-url="{{ .Permalink }}"
+      data-page-title="{{ .Title }}"
+      data-theme="light"
+    ></div>
+
+    {{/* Das Cusdis-Skript wird direkt von deren Server geladen */}}
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
 </div>
 </article>
 {{ end }}
