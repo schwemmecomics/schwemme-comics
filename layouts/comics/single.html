@@ -65,7 +65,7 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
       data-page-url="{{ .Permalink }}"
       data-page-title="{{ .Title }}"
       data-theme="light"
-        data-lang="{{ .Lang }}"
+      data-lang="{{ .Lang | default "de" }}"
     ></div>
 
     {{/* Das Cusdis-Skript */}}
