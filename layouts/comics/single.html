@@ -60,15 +60,15 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
     
     <div id="cusdis_thread"
       data-host="https://cusdis.com"
-      data-app-id="schwemme-comics"
+      data-app-id="24970c43-2814-46a1-ad48-67de2a7d85c2"
       data-page-id="{{ .File.ContentBaseName }}"
       data-page-url="{{ .Permalink }}"
       data-page-title="{{ .Title }}"
       data-theme="light"
     ></div>
 
-    {{/* Das Cusdis-Skript wird direkt von deren Server geladen */}}
-    <script async defer src="{{ "js/cusdis.js" | relURL }}"></script>
+    {{/* Das Cusdis-Skript */}}
+    <script async defer src="{{ "/js/cusdis.js" | relURL }}"></script>
 </div>
 </article>
 {{ end }}
