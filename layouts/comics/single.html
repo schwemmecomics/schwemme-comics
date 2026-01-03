@@ -1,47 +1,38 @@
 {{ define "main" }}
-<article style="max-width: 900px; margin: 0 auto; text-align: center; padding: 20px;">
+<article style="max-width: 900px; margin: 0 auto; text-align: center; padding: 20px; font-family: sans-serif;">
     
     <h1>{{ .Title }}</h1>
 
-    <div class="comic-display" style="margin-bottom: 30px;">
+    {{/* Navigation oben */}}
+    {{ partial "comic-nav.html" . }}
+
+    {{/* Das Comic-Bild */}}
+    <div class="comic-display" style="margin: 30px 0;">
         {{ $comic := .Resources.GetMatch (printf "comic.%s.*" .Lang) | default (.Resources.GetMatch "comic.*") }}
         {{ if $comic }}
             <img src="{{ $comic.RelPermalink }}" alt="{{ .Title }}" style="max-width: 100%; height: auto; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-        {{ else }}
-            <p style="background: #eee; padding: 20px;">(Bild 'comic.jpg' nicht im Ordner gefunden)</p>
         {{ end }}
     </div>
 
-    <nav class="comic-nav" style="margin: 20px 0;">
-        {{ if .PrevInSection }}
-            <a href="{{ .PrevInSection.Permalink }}"><img src="{{ "/images/previous.png" | relURL }}" alt="Prev" style="width: 50px;"></a>
-        {{ end }}
-        {{ if .NextInSection }}
-            <a href="{{ .NextInSection.Permalink }}"><img src="{{ "/images/next.png" | relURL }}" alt="Next" style="width: 50px;"></a>
-        {{ end }}
-    </nav>
+    {{/* Navigation unten */}}
+    {{ partial "comic-nav.html" . }}
 
-    <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
-
-    <div class="author-notes" style="text-align: left; background: #f9f9f9; padding: 30px; border-radius: 8px; font-family: sans-serif; line-height: 1.6;">
-        <h3 style="margin-top: 0;">Notizen des Autors:</h3>
+    <div class="author-notes" style="text-align: left; background: #fdfdfd; padding: 30px; border: 1px solid #eee; border-radius: 8px; margin-top: 40px;">
+        <h3 style="margin-top: 0; color: #555;">Notizen des Autors:</h3>
         {{ .Content }}
     </div>
 
-    <div style="margin-top: 60px; padding: 20px; border-top: 2px solid #eee;">
-        <h3>Kommentare</h3>
-        <div id="comment-section"></div>
-        <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-        <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
-        <script>
+    {{/* Cactus Comments */}}
+    <div id="comment-section" style="margin-top: 60px;"></div>
+    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+    <script>
         initComments({
             node: document.getElementById("comment-section"),
             defaultSection: "comic-{{ .File.ContentBaseName }}",
             serverUrl: "https://matrix.cactus.chat:8448",
-            siteName: "schwemme-comics", // Dein Seiten-Name bei Cactus
+            siteName: "schwemme-comics-official" 
         })
-        </script>
-    </div>
-
+    </script>
 </article>
 {{ end }}
