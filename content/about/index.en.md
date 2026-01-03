@@ -3,7 +3,7 @@ title: "About Me"
 layout: "page"
 ---
 
-<img src="/schwemme-comics/images/mein-profil.jpg" alt="The Real Ernestito" style="float: right; margin-left: 20px; width: 200px; height: auto;">
+![Profilbild](/schwemme-comics/images/mein-profil.jpg)
 
 # Welcome to Tales From The Schwemme!
 A collection of sequential art, which tries to commemorate anecdotes and peculiarities from the **Schwemme** and the people there.
