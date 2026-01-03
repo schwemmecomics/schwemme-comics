@@ -3,19 +3,22 @@
         <img src="{{ .Site.Params.header_image | relURL }}" alt="Logo" style="max-width: 800px; width: 100%;">
     </a>
 
-    <nav class="nav-languages" style="margin: 10px 0; font-family: sans-serif; font-size: 0.9em;">
+<nav class="nav-languages" style="margin: 10px 0; font-family: sans-serif; font-size: 0.9em;">
         {{ $currentLang := .Lang }}
         {{ range .Site.Languages }}
-            {{ if eq .Lang $currentLang }}
-                <span style="font-weight: bold; text-decoration: underline;">{{ .LanguageName }}</span>
+            {{ $langName := .LanguageName }}
+            {{ $langCode := .Lang }}
+            
+            {{ if eq $langCode $currentLang }}
+                <span style="font-weight: bold; text-decoration: underline;">{{ $langName }}</span>
             {{ else }}
                 {{ $found := false }}
                 {{ range $.Translations }}
-                    <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit; padding: 0 5px;">{{ .LanguageName }}</a>
+                    <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit; padding: 0 5px;">{{ $langName }}</a>
                     {{ $found = true }}
                 {{ end }}
                 {{ if not $found }}
-                    <a href="/{{ .Lang }}/" style="text-decoration: none; color: inherit; padding: 0 5px; opacity: 0.6;">{{ .LanguageName }}</a>
+                    <a href="/{{ $langCode }}/" style="text-decoration: none; color: inherit; padding: 0 5px; opacity: 0.6;">{{ $langName }}</a>
                 {{ end }}
             {{ end }}
             {{ if (lt .Weight 2) }} | {{ end }}
