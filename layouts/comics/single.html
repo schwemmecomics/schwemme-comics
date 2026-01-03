@@ -23,16 +23,23 @@
     </div>
 
     {{/* Cactus Comments */}}
-    <div id="comment-section" style="margin-top: 60px;"></div>
-    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+<div class="comments-wrapper" style="margin-top: 60px; padding: 20px; border-top: 2px solid #eee; text-align: left;">
+    <h3 style="text-align: center;">Kommentare</h3>
+    
+    <div id="comment-section"></div>
+
+    {{/* Hier sind die korrigierten Links */}}
+    <script type="text/javascript" src="https://cdn.cactus.chat/cactus.js"></script>
+    <link rel="stylesheet" href="https://cdn.cactus.chat/style.css" type="text/css">
+    
     <script>
         initComments({
             node: document.getElementById("comment-section"),
             defaultSection: "comic-{{ .File.ContentBaseName }}",
             serverUrl: "https://matrix.cactus.chat:8448",
-            siteName: "schwemme-comics-official" 
+            siteName: "schwemme-comics"
         })
     </script>
+</div>
 </article>
 {{ end }}
