@@ -41,15 +41,21 @@
               
               {{/* Hier kopieren wir die funktionierende Bilder-Logik */}}
               {{ $thumbRaw := .Resources.GetMatch "comic.*" }}
-              {{ if $thumbRaw }}
-                {{/* Zuschnitt auf 400x300 Pixel für ein einheitliches Archiv */}}
-                {{ $thumb := $thumbRaw.Fill "400x300 Center" }}
-                <img src="{{ $thumb.RelPermalink }}" style="width: 100%; height: auto; display: block;" alt="{{ .Title }}">
-              {{ else }}
-                {{/* Falls mal kein Bild gefunden wird, ein Platzhalter */}}
-                <div style="width: 100%; height: 180px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #ccc;">Kein Bild</div>
-              {{ end }}
-
+                {{ if not $thumbRaw }}
+                    {{/* Fallback: Wenn EN kein Bild hat, nimm das vom DE-Original */}}
+                    {{ range .AllTranslations }}
+                        {{ if not $thumbRaw }}
+                            {{ $thumbRaw = .Resources.GetMatch "comic.*" }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                
+                {{ if $thumbRaw }}
+                    {{ $thumb := $thumbRaw.Fill "400x300 Center" }}
+                    <img src="{{ $thumb.RelPermalink }}" style="width: 100%; height: auto; display: block;" alt="{{ .Title }}">
+                {{ else }}
+                    <div style="width: 100%; height: 180px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #ccc;">No Image</div>
+                {{ end }}
               <div style="padding: 15px; text-align: center;">
                 <strong style="display: block; margin-bottom: 5px;">{{ .Title }}</strong>
                 <small style="color: #888;">#{{ .File.ContentBaseName }}</small>
