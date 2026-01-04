@@ -1,0 +1,18 @@
+<footer>
+    <p>{{ .Site.Params.disclaimer }}</p>
+    <p>
+        &copy; {{ now.Format "2006" }} Ernestito | 
+        {{ if .IsTranslated }}
+            {{ range .AllTranslations }}
+                <a href="{{ .Permalink }}">{{ .Language.Lang | upper }}</a>
+                {{ if (not ($.Language.Lang | eq .Language.Lang)) }} | {{ end }}
+            {{ end }}
+        {{ else }}
+            {{ if eq .Language.Lang "de" }}
+                <strong>DE</strong> | <a href="/en/">EN</a>
+            {{ else }}
+                <a href="/">DE</a> | <strong>EN</strong>
+            {{ end }}
+        {{ end }}
+    </p>
+</footer>
