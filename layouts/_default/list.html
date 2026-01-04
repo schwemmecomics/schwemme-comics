@@ -33,13 +33,21 @@
       {{ end }}
 
     {{ else }}
-      {{/* Archiv-Ansicht für Comics */}}
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-        {{ range .Pages }}
-          <div style="border: 1px solid #ccc; padding: 10px; width: 200px; text-align: center;">
+      {{/* Archiv-Ansicht für Comics im Grid-Look */}}
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; padding: 20px;">
+        {{ range .Pages.ByDate.Reverse }}
+          <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: transform 0.2s; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);" 
+               onmouseover="this.style.transform='scale(1.03)'" 
+               onmouseout="this.style.transform='scale(1)'">
             <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">
-              {{ if .Params.comic_file }}<img src="{{ .Params.comic_file | absURL }}" style="width: 100%; height: auto;">{{ end }}
-              <p>{{ .Title }}</p>
+              {{ if .Params.comic_file }}
+                <div style="height: 150px; overflow: hidden; background: #f9f9f9; display: flex; align-items: center; justify-content: center;">
+                  <img src="{{ .Params.comic_file | relURL }}" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+              {{ end }}
+              <div style="padding: 10px; font-size: 0.9em; font-weight: bold; min-height: 40px; display: flex; align-items: center; justify-content: center;">
+                {{ .Title }}
+              </div>
             </a>
           </div>
         {{ end }}
