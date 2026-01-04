@@ -64,5 +64,9 @@ defaultContentLanguage = "de"
   icon_next = "images/next.png"
   icon_last = "images/last.png"
 
+  # Share Icon
+  icon_share = "images/share.png" 
+
+
   # Disclaimer Footer
   disclaimer = "Alle Charaktere und Ereignisse in diesem Comic sind fiktiv. Ähnlichkeiten mit lebenden oder verstorbenen Personen oder Ereignissen sind rein zufällig."
