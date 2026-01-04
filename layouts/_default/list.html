@@ -32,21 +32,27 @@
         </div>
       {{ end }}
 
-    {{ else }}
-      {{/* Archiv-Ansicht für Comics im Grid-Look */}}
-      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 20px; padding: 20px;">
+{{ else }}
+      {{/* Archiv-Ansicht für Comics - EXAKT wie auf der Startseite */}}
+      <div class="comic-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; padding: 20px;">
         {{ range .Pages.ByDate.Reverse }}
-          <div style="border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: transform 0.2s; background: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.05);" 
-               onmouseover="this.style.transform='scale(1.03)'" 
-               onmouseout="this.style.transform='scale(1)'">
+          <div class="archive-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.2s;">
             <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">
-              {{ if .Params.comic_file }}
-                <div style="height: 150px; overflow: hidden; background: #f9f9f9; display: flex; align-items: center; justify-content: center;">
-                  <img src="{{ .Params.comic_file | relURL }}" alt="{{ .Title }}" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
+              
+              {{/* Hier kopieren wir die funktionierende Bilder-Logik */}}
+              {{ $thumbRaw := .Resources.GetMatch "comic.*" }}
+              {{ if $thumbRaw }}
+                {{/* Zuschnitt auf 400x300 Pixel für ein einheitliches Archiv */}}
+                {{ $thumb := $thumbRaw.Fill "400x300 Center" }}
+                <img src="{{ $thumb.RelPermalink }}" style="width: 100%; height: auto; display: block;" alt="{{ .Title }}">
+              {{ else }}
+                {{/* Falls mal kein Bild gefunden wird, ein Platzhalter */}}
+                <div style="width: 100%; height: 180px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #ccc;">Kein Bild</div>
               {{ end }}
-              <div style="padding: 10px; font-size: 0.9em; font-weight: bold; min-height: 40px; display: flex; align-items: center; justify-content: center;">
-                {{ .Title }}
+
+              <div style="padding: 15px; text-align: center;">
+                <strong style="display: block; margin-bottom: 5px;">{{ .Title }}</strong>
+                <small style="color: #888;">#{{ .File.ContentBaseName }}</small>
               </div>
             </a>
           </div>
