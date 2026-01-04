@@ -1,6 +1,7 @@
 ---
 title: "Typical Flo"
 date: 2026-01-04
+weight: 2
 ---
 
 First appearance of Flozi and Steve. Steve works a lot behind the scenes to keep the club running smoothly. Flozi was a member who is now a regular. His life's work is to be a nuisance and to push his provocating opinions onto others. 

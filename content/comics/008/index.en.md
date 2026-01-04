@@ -1,6 +1,7 @@
 ---
 title: "Radio Flo"
 date: 2026-01-04
+weight: 8
 ---
 
 Flo has certain topics, which he rotates through like on a playlist. Astonishingly, he isn't stopped at topics, politically versed non-members would expect, but at his favourite initiation ritual.

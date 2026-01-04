@@ -1,6 +1,7 @@
 ---
 title: "Ist Ernestito da"
 date: 2026-01-04
+weight: 6
 ---
 
 Schwemmlinge werden mit Beitritt zum Club neu getauft. Ernestito z.B. heißt außerhalb der Schwemme Chris.

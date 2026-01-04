@@ -1,6 +1,7 @@
 ---
 title: "Bardienst First"
 date: 2026-01-04
+weight: 7
 ---
 
 Sometimes the bartender uses their right to mix what ever the bartender wants to mix themself. Unlucky, if a guest want's to order during that time.

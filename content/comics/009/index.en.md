@@ -1,6 +1,7 @@
 ---
 title: "Dios De Los Shavos"
 date: 2026-01-04
+weight: 9
 ---
 
 Enter Henning. Henning is Franks better half. 

@@ -1,6 +1,7 @@
 ---
 title: "Lenny Poker"
 date: 2026-01-04
+weight: 3
 ---
 
 Auftritt Lenny und Ernestito. Lenny nutzt seine Mütze manchmal als Verkleidung um nicht direkt erkannt zu werden; das "A" steht dann für "anderkaver". Ernestito steht hinterm Tresen.

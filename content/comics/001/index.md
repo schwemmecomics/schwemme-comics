@@ -1,6 +1,7 @@
 ---
-title: "Wo SteveO?"
-date: 2026-01-03
+title: "Wo SteveO"
+date: 2026-01-04
+weight: 1
 ---
 
 Willkommen in der Schwemme, einem Studentenclub im Keller eines Wohnheims. Hier ist der erste entstandene Comic

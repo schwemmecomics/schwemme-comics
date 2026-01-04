@@ -1,6 +1,7 @@
 ---
 title: "Typisch Flo"
 date: 2026-01-04
+weight: 2
 ---
 
 Auftritt Flo und Steve. Steve kümmert sich um viel Hintergrundarbeit, die im Club anfällt. Flozie ist ein ehemaliges Mitglied, jetzt Stammgast. Seine Aufgabe ist anderen das Leben schwer zu machen und ihnen seine provokanten Meinungen aufzuzwingen.
