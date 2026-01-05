@@ -3,7 +3,7 @@ title: "Über mich"
 layout: "page"
 ---
 
-<img src="/images/mein-profil.jpg" alt="Der Echte Ernestito" style="float: right; margin-left: 20px; margin-bottom: 20px; width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #eee;">
+<img src="images/mein-profil.jpg" alt="Der Echte Ernestito" style="float: right; margin-left: 20px; margin-bottom: 20px; width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #eee;">
 
 # Willkommen zu Geschichten aus Der Schwemme!
 Eine Sammlung an sequentieller Kunst, die versucht Anekdoten aus der **Schwemme** und Eigenheiten der Schwemmlinge humorvoll festzuhalten. 
