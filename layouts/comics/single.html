@@ -17,22 +17,18 @@
     {{/* Navigation unten */}}
     {{ partial "comic-nav.html" . }}
 
-<div class="comic-content" style="max-width: 800px; margin: 20px auto; padding: 0 15px;">
+<div class="comic-content" style="max-width: 800px; margin: 15px auto; padding: 0 15px; text-align: center;">
     
-    {{/* Nummer & Titel als neue Trennung */}}
-    <div class="comic-title-area" style="margin-bottom: 15px; border-top: 1px solid #eee; padding-top: 20px;">
-        <h2 style="font-size: 1.5em; margin: 0; color: #333;">
+    {{/* Nummer & Titel - schön dezent in 1.2em */}}
+    <div class="comic-title-area" style="margin-bottom: 15px; border-top: 1px solid #eee; padding-top: 15px;">
+        <h2 style="font-size: 1.2em; margin: 0; color: #444; font-weight: bold;">
             #{{ .File.ContentBaseName }} – {{ .Title }}
         </h2>
     </div>
 
-    {{/* Die eigentlichen Notizen */}}
-    <div class="author-notes" style="font-style: italic; color: #555; line-height: 1.6;">
-        {{ if eq .Site.Language.Lang "de" }}
-            {{ .Params.note_de }}
-        {{ else }}
-            {{ .Params.note_en }}
-        {{ end }}
+    {{/* Hier wird automatisch der Text aus der index.md (oder index.en.md) geladen */}}
+    <div class="author-notes" style="font-style: italic; color: #666; line-height: 1.6; font-size: 0.95em; text-align: left;">
+        {{ .Content }}
     </div>
     
 </div>
