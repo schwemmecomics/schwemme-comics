@@ -17,16 +17,16 @@
     {{/* Navigation unten */}}
     {{ partial "comic-nav.html" . }}
 
-<section class="comic-content" style="max-width: 800px; margin: 20px auto; padding: 0 15px;">
+<div class="comic-content" style="max-width: 800px; margin: 20px auto; padding: 0 15px;">
     
-    {{/* 1. Dynamische Überschrift: Nummer aus Ordnername + Titel aus Frontmatter */}}
-    <div class="comic-title-area" style="margin-bottom: 20px; border-top: 1px solid #eee; padding-top: 20px;">
-        <h2 style="font-size: 1.6em; margin: 0 0 10px 0; color: #333;">
+    {{/* Nummer & Titel als neue Trennung */}}
+    <div class="comic-title-area" style="margin-bottom: 15px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h2 style="font-size: 1.5em; margin: 0; color: #333;">
             #{{ .File.ContentBaseName }} – {{ .Title }}
         </h2>
     </div>
 
-    {{/* 2. Deine Notizen (DE/EN) */}}
+    {{/* Die eigentlichen Notizen */}}
     <div class="author-notes" style="font-style: italic; color: #555; line-height: 1.6;">
         {{ if eq .Site.Language.Lang "de" }}
             {{ .Params.note_de }}
@@ -34,8 +34,8 @@
             {{ .Params.note_en }}
         {{ end }}
     </div>
-
-</section>
+    
+</div>
     
     {{/* Navigation unter Notizen */}}
     {{ partial "comic-nav.html" . }}
