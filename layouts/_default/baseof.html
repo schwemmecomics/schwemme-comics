@@ -27,6 +27,7 @@
         .nav-main a:hover { color: {{ .Site.Params.color_hover }}; }
         .comic-nav img { width: 50px; margin: 10px; cursor: pointer; }
         footer { margin-top: 50px; padding: 20px; font-size: 0.8em; color: gray; }
+        img { max-width: 100%; height: auto; }
 
         /* Mobile Optimierung */
           @media (max-width: 600px) {
@@ -49,6 +50,24 @@
               float: none !important;
               display: block;
               margin: 0 auto 20px auto !important;
+            }
+            /* Optimisierung für Tippen mit Fingern*/
+            .nav-main {
+                display: flex;
+                flex-direction: column; /* Links untereinander statt nebeneinander */
+                gap: 15px;
+                margin-top: 10px;
+              }
+            
+              .nav-main a {
+                font-size: 1.2em; /* Etwas größere Schrift zum Tippen */
+                padding: 10px;
+                border-bottom: 1px solid #f0f0f0; /* Leichte Trennung */
+              }
+              .author-notes p {
+                text-align: left; /* Linksbündig ist auf dem Handy leichter zu lesen */
+                line-height: 1.5; /* Mehr Zeilenabstand gegen "Textwüsten" */
+              }
             }
           }
     </style>
