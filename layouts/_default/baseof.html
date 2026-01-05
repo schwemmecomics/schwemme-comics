@@ -2,6 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
 
     <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
@@ -26,6 +27,30 @@
         .nav-main a:hover { color: {{ .Site.Params.color_hover }}; }
         .comic-nav img { width: 50px; margin: 10px; cursor: pointer; }
         footer { margin-top: 50px; padding: 20px; font-size: 0.8em; color: gray; }
+
+        /* Mobile Optimierung */
+          @media (max-width: 600px) {
+            .comic-nav img {
+              width: 40px; /* Etwas kleiner für schmale Screens */
+              margin: 5px;
+            }
+            
+            .archive-card {
+              width: 100% !important; /* Kacheln im Archiv nehmen volle Breite ein */
+            }
+        
+            .author-notes {
+              padding: 0 15px;
+              text-align: left; /* Besser lesbar auf dem Handy */
+            }
+        
+            /* Das Profilbild auf "Über mich" unter den Text schieben statt daneben */
+            img[style*="float: right"] {
+              float: none !important;
+              display: block;
+              margin: 0 auto 20px auto !important;
+            }
+          }
     </style>
 
     {{/* Favicon */}}
