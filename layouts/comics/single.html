@@ -17,11 +17,29 @@
     {{/* Navigation unten */}}
     {{ partial "comic-nav.html" . }}
 
-    <div class="author-notes" style="text-align: left; background: #fdfdfd; padding: 30px; border: 1px solid #eee; border-radius: 8px; margin-top: 40px;">
-        <h3 style="margin-top: 0; color: #555;">Notizen des Autors:</h3>
-        {{ .Content }}
+<section class="comic-content" style="max-width: 800px; margin: 20px auto; padding: 0 15px;">
+    
+    {{/* 1. Dynamische Überschrift: Nummer aus Ordnername + Titel aus Frontmatter */}}
+    <div class="comic-title-area" style="margin-bottom: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h2 style="font-size: 1.6em; margin: 0 0 10px 0; color: #333;">
+            #{{ .File.ContentBaseName }} – {{ .Title }}
+        </h2>
     </div>
 
+    {{/* 2. Deine Notizen (DE/EN) */}}
+    <div class="author-notes" style="font-style: italic; color: #555; line-height: 1.6;">
+        {{ if eq .Site.Language.Lang "de" }}
+            {{ .Params.note_de }}
+        {{ else }}
+            {{ .Params.note_en }}
+        {{ end }}
+    </div>
+
+</section>
+    
+    {{/* Navigation unter Notizen */}}
+    {{ partial "comic-nav.html" . }}
+    
     {{/* Share Section*/}}
 <div class="share-container" style="margin: 20px 0; text-align: center;">
     {{/* Der Button mit deinem einen Icon */}}
