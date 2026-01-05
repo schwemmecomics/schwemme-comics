@@ -33,9 +33,16 @@
     {{ end }}
   </nav>
 
-  <section class="author-notes">
-    <h3>{{ if eq .Site.Language.Lang "de" }}Notizen des Autors{{ else }}Author's Notes{{ end }}</h3>
-    <p>{{ if eq .Site.Language.Lang "de" }}{{ .Params.note_de }}{{ else }}{{ .Params.note_en }}{{ end }}</p>
+  <section class="comic-header-info" style="margin-top: 30px; margin-bottom: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+    {{/* Die Nummer aus dem Ordnernamen und der Titel aus dem Frontmatter */}}
+    <h2 style="font-size: 1.6em; margin-bottom: 10px;">
+      #{{ .File.ContentBaseName }} – {{ .Title }}
+    </h2>
+  
+    {{/* Hier bleiben deine Notizen erhalten, aber ohne die alte H3-Überschrift */}}
+    <p style="font-style: italic; color: #555; max-width: 800px; margin: 0 auto;">
+      {{ if eq .Site.Language.Lang "de" }}{{ .Params.note_de }}{{ else }}{{ .Params.note_en }}{{ end }}
+    </p>
   </section>
 </article>
 
