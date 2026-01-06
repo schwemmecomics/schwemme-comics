@@ -8,6 +8,6 @@ Well, where does this come from now?
 
 Klacki often brings a laptop to Schwemme, for IT reasons.
 
-*Three references at once, whoop! Who recognises them all?
+*Three references at once, whoop! Who recognises them all?*
 
 ---

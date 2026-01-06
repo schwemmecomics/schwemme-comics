@@ -32,14 +32,34 @@
         </div>
       {{ end }}
 
-    {{ else }}
-      {{/* Archiv-Ansicht für Comics */}}
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-        {{ range .Pages }}
-          <div style="border: 1px solid #ccc; padding: 10px; width: 200px; text-align: center;">
+{{ else }}
+      {{/* Archiv-Ansicht für Comics - EXAKT wie auf der Startseite */}}
+      <div class="comic-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; padding: 20px;">
+        {{ range .Pages.ByDate.Reverse }}
+          <div class="archive-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); transition: transform 0.2s;">
             <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">
-              {{ if .Params.comic_file }}<img src="{{ .Params.comic_file | absURL }}" style="width: 100%; height: auto;">{{ end }}
-              <p>{{ .Title }}</p>
+              
+              {{/* Hier kopieren wir die funktionierende Bilder-Logik */}}
+              {{ $thumbRaw := .Resources.GetMatch "comic.*" }}
+                {{ if not $thumbRaw }}
+                    {{/* Fallback: Wenn EN kein Bild hat, nimm das vom DE-Original */}}
+                    {{ range .AllTranslations }}
+                        {{ if not $thumbRaw }}
+                            {{ $thumbRaw = .Resources.GetMatch "comic.*" }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+                
+                {{ if $thumbRaw }}
+                    {{ $thumb := $thumbRaw.Fill "400x300 Center" }}
+                    <img src="{{ $thumb.RelPermalink }}" style="width: 100%; height: auto; display: block;" alt="{{ .Title }}">
+                {{ else }}
+                    <div style="width: 100%; height: 180px; background: #f0f0f0; display: flex; align-items: center; justify-content: center; color: #ccc;">No Image</div>
+                {{ end }}
+              <div style="padding: 15px; text-align: center;">
+                <strong style="display: block; margin-bottom: 5px;">{{ .Title }}</strong>
+                <small style="color: #888;">#{{ .File.ContentBaseName }}</small>
+              </div>
             </a>
           </div>
         {{ end }}

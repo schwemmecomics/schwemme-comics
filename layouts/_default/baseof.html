@@ -1,7 +1,8 @@
-er<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }} | {{ .Site.Title }}</title>
 
     <meta property="og:title" content="{{ .Title }} | {{ .Site.Title }}">
@@ -26,7 +27,54 @@ er<!DOCTYPE html>
         .nav-main a:hover { color: {{ .Site.Params.color_hover }}; }
         .comic-nav img { width: 50px; margin: 10px; cursor: pointer; }
         footer { margin-top: 50px; padding: 20px; font-size: 0.8em; color: gray; }
+        img { max-width: 100%; height: auto; }
+
+        /* Mobile Optimierung */
+          @media (max-width: 600px) {
+            .comic-nav img {
+              width: 55px; /* Etwas kleiner für schmale Screens */
+              margin: 8px;
+            }
+            
+            .archive-card {
+              width: 100% !important; /* Kacheln im Archiv nehmen volle Breite ein */
+            }
+        
+            .author-notes {
+              padding: 0 15px;
+              text-align: left; /* Besser lesbar auf dem Handy */
+            }
+        
+            /* Das Profilbild auf "Über mich" unter den Text schieben statt daneben */
+            img[style*="float: right"] {
+              float: none !important;
+              display: block;
+              margin: 0 auto 20px auto !important;
+            }
+            /* Optimisierung für Tippen mit Fingern*/
+            .nav-main {
+                display: flex;
+                flex-direction: column; /* Links untereinander statt nebeneinander */
+                gap: 15px;
+                margin-top: 10px;
+              }
+            
+              .nav-main a {
+                font-size: 1.2em; /* Etwas größere Schrift zum Tippen */
+                padding: 10px;
+                border-bottom: 1px solid #f0f0f0; /* Leichte Trennung */
+              }
+              .author-notes p {
+                text-align: left; /* Linksbündig ist auf dem Handy leichter zu lesen */
+                line-height: 1.5; /* Mehr Zeilenabstand gegen "Textwüsten" */
+              }
+            }
+          }
     </style>
+
+    {{/* Favicon */}}
+    <link rel="icon" type="image/png" href="{{ "favicon.png" | relURL }}">
+    
 </head>
 <body>
    
@@ -37,9 +85,7 @@ er<!DOCTYPE html>
         {{ block "main" . }}{{ end }}
     </main>
 
-    <footer>
-        <p>{{ .Site.Params.disclaimer }}</p>
-        <p>&copy; {{ now.Format "2006" }} Ernestito | <a href="/de/">DE</a> | <a href="/en/">EN</a></p>
-    </footer>
+        {{ partial "footer.html" . }}
+    
 </body>
 </html>

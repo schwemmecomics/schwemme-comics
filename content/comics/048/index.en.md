@@ -6,6 +6,6 @@ weight: 48
 
 Pour some! Always these Schwemmlings who bring their own ingredients. Unbelievable ...
 
-*While looking at the comics with Pipilotta, i'm not sure if her nose ring could/should be highlighted more clearly somehow. *
+*While looking at the comics with Pipilotta, i'm not sure if her nose ring could/should be highlighted more clearly somehow.*
 
 ---

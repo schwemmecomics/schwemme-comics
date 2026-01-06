@@ -1,5 +1,5 @@
 ---
-title: "Es heißt "Bassoon""
+title: "Es heißt Bassoon"
 date: 2026-01-04
 weight: 294
 ---
