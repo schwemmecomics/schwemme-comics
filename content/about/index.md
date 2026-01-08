@@ -3,7 +3,7 @@ title: "Über mich"
 layout: "page"
 ---
 
-<img src="/schwemme-comics/images/mein-profil.jpg" alt="Der Echte Ernestito" style="float: right; margin-left: 20px; margin-bottom: 20px; width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 3px solid #eee;">
+![Mein Profilbild](/images/mein-profil.jpg)
 
 # Willkommen zu Geschichten aus Der Schwemme!
 Eine Sammlung an sequentieller Kunst, die versucht Anekdoten aus der **Schwemme** und Eigenheiten der Schwemmlinge humorvoll festzuhalten. 
@@ -20,25 +20,17 @@ Auch gut zu wissen:
 * Das hier ist eine Möglichkeit die Comics zu kontrolliert zu veröffentlichen. Wenn’s gut funktioniert könnte da noch was nachfolgen, wer weiß? Möglicherweise landen die Comics mal in irgendeinem Bücherregal.
 
 
-## Häufig gestellte Fragen (FAQ)
+### Häufig gestellte Fragen (FAQ)
 
-<details style="cursor: pointer; margin-bottom: 10px; border: 1px solid #eee; padding: 10px; border-radius: 5px;">
-  <summary style="font-weight: bold; font-size: 1.1em;">Womit zeichnest du die Comics?</summary>
-  <p style="margin-top: 10px; color: #555;">
-    Ich zeichne auf meinem Galaxy Tab S9+ und nutze die Samsung-App "Penup".
-  </p>
-</details>
+{{< faq q="Womit zeichnest du die Comics?" >}}
+Ich zeichne auf meinem Galaxy Tab S9+ und nutze die Samsung-App "Penup".
+{{< /faq >}}
 
-<details style="cursor: pointer; margin-bottom: 10px; border: 1px solid #eee; padding: 10px; border-radius: 5px;">
-  <summary style="font-weight: bold; font-size: 1.1em;">Darf ich die Comics teilen?</summary>
-  <p style="margin-top: 10px; color: #555;">
-    Klar! Solange mein Name/Link dabei bleibt, freue ich mich über jeden Share.
-  </p>
-</details>
+{{< faq q="Darf ich die Comics teilen?" >}}
+Klar! Solange mein Name/Link dabei bleibt, freue ich mich über jeden Share.
+{{< /faq >}}
 
-<details style="cursor: pointer; margin-bottom: 10px; border: 1px solid #eee; padding: 10px; border-radius: 5px;">
-  <summary style="font-weight: bold; font-size: 1.1em;">Wie oft erscheinen neue Strips?</summary>
-  <p style="margin-top: 10px; color: #555;">
-    Wann immer ich Zeit dafür finde. Mein Studium steht immer noch an erster Stelle, die Comics kommen dann irgendwann nach Essen, Schlafen und in der Schwemme Unfug treiben.
-  </p>
-</details>
+{{< faq q="Wie oft erscheinen neue Comics?" >}}
+Wann immer ich Zeit dafür finde. Mein Studium steht immer noch an erster Stelle, die Comics kommen dann irgendwann nach Essen, Schlafen und in der Schwemme Unfug treiben.
+{{< /faq >}}
+
