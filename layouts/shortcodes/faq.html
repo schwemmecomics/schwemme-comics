@@ -1,9 +1,37 @@
+<div class="faq-container" style="margin-bottom: 20px;">
+  <details class="faq-details">
+    <summary class="faq-question">
+      <strong>{{ .Get "q" }}</strong>
+    </summary>
+    <div class="faq-answer">
+      {{ .Inner | markdownify }}
+    </div>
+  </details>
+</div>
 
-<details style="cursor: pointer; margin-bottom: 12px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background-color: #fafafa; overflow-wrap: anywhere; word-break: normal; display: block; width: auto; max-width: 100%;">
-  <summary style="font-weight: bold; font-size: 1.1em; color: #333; outline: none; font-family: inherit; display: list-item;">
-    {{ .Get "q" }}
-  </summary>
-  <div style="margin-top: 10px; color: #444; line-height: 1.6; border-top: 1px solid #eee; padding-top: 10px; font-family: inherit; white-space: normal; display: block;">
-    {{ .Inner | markdownify }}
-  </div>
-</details>
+<style>
+  .faq-details {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f9f9f9;
+  }
+  .faq-question {
+    cursor: pointer;
+    font-size: 1.1rem;
+  }
+  .faq-answer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    /* Dies erzwingt den Zeilenumbruch und die normale Schriftart */
+    white-space: normal;
+    word-wrap: break-word;
+    display: block;
+  }
+  /* Verhindert, dass das Theme den Text als Code formatiert */
+  .faq-answer p, .faq-answer div {
+    font-family: inherit !important;
+    color: inherit !important;
+  }
+</style>
