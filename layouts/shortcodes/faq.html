@@ -1,8 +1,10 @@
 
 
-<details style="cursor: pointer; margin-bottom: 10px; border: 1px solid #eee; padding: 10px; border-radius: 5px;">
-  <summary style="font-weight: bold; font-size: 1.1em;">{{ .Get "q" }}</summary>
-  <p style="margin-top: 10px; color: #555;">
+<details style="cursor: pointer; margin-bottom: 12px; border: 1px solid #ddd; padding: 15px; border-radius: 8px; background-color: #fafafa; overflow-wrap: break-word;">
+  <summary style="font-weight: bold; font-size: 1.1em; color: #333; outline: none; font-family: sans-serif;">
+    {{ .Get "q" }}
+  </summary>
+  <div style="margin-top: 10px; color: #444; line-height: 1.6; border-top: 1px solid #eee; padding-top: 10px; font-family: sans-serif;">
     {{ .Inner | markdownify }}
-  </p>
+  </div>
 </details>
