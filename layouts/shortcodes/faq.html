@@ -1,0 +1,8 @@
+
+
+<details style="cursor: pointer; margin-bottom: 10px; border: 1px solid #eee; padding: 10px; border-radius: 5px;">
+  <summary style="font-weight: bold; font-size: 1.1em;">{{ .Get "q" }}</summary>
+  <p style="margin-top: 10px; color: #555;">
+    {{ .Inner | markdownify }}
+  </p>
+</details>
