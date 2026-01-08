@@ -22,15 +22,15 @@ Auch gut zu wissen:
 
 ### Häufig gestellte Fragen (FAQ)
 
-{{< faq q="Womit zeichnest du die Comics?" >}}
+{{% faq q="Womit zeichnest du die Comics?" %}}
 Ich zeichne auf meinem Galaxy Tab S9+ und nutze die Samsung-App "Penup".
-{{< /faq >}}
+{{% /faq %}}
 
-{{< faq q="Darf ich die Comics teilen?" >}}
+{{% faq q="Darf ich die Comics teilen?" %}}
 Klar! Solange mein Name/Link dabei bleibt, freue ich mich über jeden Share.
-{{< /faq >}}
+{{% /faq %}}
 
-{{< faq q="Wie oft erscheinen neue Comics?" >}}
+{{% faq q="Wie oft erscheinen neue Comics?" %}}
 Wann immer ich Zeit dafür finde. Mein Studium steht immer noch an erster Stelle, die Comics kommen dann irgendwann nach Essen, Schlafen und in der Schwemme Unfug treiben.
-{{< /faq >}}
+{{% /faq %}}
 
