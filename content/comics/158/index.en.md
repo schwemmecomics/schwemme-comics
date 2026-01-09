@@ -8,4 +8,3 @@ Cubic Comedy?
 
 Because #130 was such a hit, here's the continuation of this kind of humor.
 
----
