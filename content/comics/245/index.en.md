@@ -9,5 +9,3 @@ A drink inspired by Ludo
 Recipe: Half Lime Juice, Half Gin
 
 Of course, something completely different from a gimlet.
-
----
