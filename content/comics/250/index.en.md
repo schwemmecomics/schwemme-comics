@@ -8,4 +8,4 @@ Those are the days...
 
 I think there are more pleasant ways to earn a stay in hospital.
 
-*I'm going to cut out Give-Ernestito just like I will with Running Bernhard from #226.
+*I'm going to cut out Give-Ernestito just like I will with Running Bernhard from #226.*
