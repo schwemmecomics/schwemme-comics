@@ -14,4 +14,5 @@ other = "← To news overview"
 other = "Share this post"
 [comments_title]
 other = "Comments"
-
+[share_text]
+other = "Check out this post on Schwemme Comics!"
