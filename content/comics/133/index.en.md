@@ -6,6 +6,4 @@ weight: 133
 
 A comic to honour the Veti-Matrikel 2020; the Chamaeleons!
 
-*A chamaeleon enters a bar. Hm. And then?
-
----
+*A chamaeleon enters a bar. Hm. And then?*
