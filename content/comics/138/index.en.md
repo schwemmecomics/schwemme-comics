@@ -6,4 +6,4 @@ weight: 138
 
 A comic to honour the Veti-Matrikel 2015; the Pandas!
 
-*Now the proper joke. Because pandas originate from china. Or the Matrikel had their preliminaries during the pandemic? Both are funny.*
+Now the proper joke. Because pandas originate from china. Or the Matrikel was studying during the pandemic? Both are funny.
