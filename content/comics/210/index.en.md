@@ -8,4 +8,4 @@ They don't just ride, they stick together!
 
 Lenny rides Nextbike, which are not designed to be ridden for long distances or uphill.    
 
-*The exchange refers to a scene from the second Lord of the Rings movie (Aragorn throws Gimli). Note the turtle.
+*The exchange refers to a scene from the second Lord of the Rings movie (Aragorn throws Gimli). Note the turtle.*
