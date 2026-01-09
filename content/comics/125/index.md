@@ -14,4 +14,4 @@ Komm schnell mal her in die Schwemme, denn da ist dein Freindeskreis!
 
 Neuer Zeichenstil! Wird ab jetzt immer so aussehen. An Erfolg muss man schließlich anknüpfen.
 
-_Dachte mal, ich versuch mich mit anderleuts Lorbeeren zu schmücken, in diesem Fall die von Parker TEXT_EN: Stone. Vielleicht kann ich ja mit aufwändigeren Panels von meinen unkreativen Witzen ablenken._
+_Dachte mal, ich versuch mich mit anderleuts Lorbeeren zu schmücken, in diesem Fall die von Parker & Stone. Vielleicht kann ich ja mit aufwändigeren Panels von meinen unkreativen Witzen ablenken._
