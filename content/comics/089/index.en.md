@@ -8,6 +8,4 @@ Warning, explicit content!
 
 One of my best. Thanks for the great set-up! It gets funnier and weirder the more I look at it.
 
-*Also note the titles on the sextape collection.
-
----
+*Also note the titles on the sextape collection.*
