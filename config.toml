@@ -37,9 +37,9 @@ defaultContentLanguage = "de"
   languageName = "English"
   weight = 2
   # Hier kommen die englischen Menüpunkte drunter:
-    [[languages.de.menu.main]]
+  [[languages.en.menu.main]]
     name = "News"
-    url = "/news/"
+    url = "/en/news/"
     weight = 1
   [[languages.en.menu.main]]
     name = "Archive"
