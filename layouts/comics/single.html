@@ -49,7 +49,7 @@
 document.getElementById('shareBtn').addEventListener('click', async () => {
     const shareData = {
         title: '{{ .Title }}',
-        text: 'Schau dir diesen Comic an!',
+        text: '{{ i18n "share_text" }}',
         url: '{{ .Permalink }}'
     };
 
