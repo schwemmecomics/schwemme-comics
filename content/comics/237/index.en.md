@@ -10,4 +10,3 @@ But then I’ll see the shining light
 
 In the animated series Dragon Ball, there is a wish-granting dragon named Shen Long who appears when you have collected all seven of his Dragon Balls.
 
-___
