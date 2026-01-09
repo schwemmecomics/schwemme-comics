@@ -8,6 +8,4 @@ The best solution for all solutions.
 
 Third comic of the vodka dilemma. We are nearing the finale
 
-*Frank is the character who is easiest drawn looking down.
-
----
+*Frank is the character who is easiest drawn looking down.*
