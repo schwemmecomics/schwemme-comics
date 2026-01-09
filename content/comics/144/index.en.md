@@ -8,6 +8,4 @@ weight: 144
 
 Although the characters should be aware they are characters in a comic, after the first volume of the series was published.
 
-*Inspired, again, by e9m. You might overestimate my creativeness.
-
----
+*Inspired, again, by e9m. You might overestimate my creativeness.*
