@@ -8,4 +8,3 @@ The trumpets of the apocalypse.
 
 They blare from Lenny's rear end after consumption of a slice of Quattro Formaggi pizza.
 
----
