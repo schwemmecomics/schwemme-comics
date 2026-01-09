@@ -10,6 +10,9 @@ other = "Weiter »"
 other = "Seite {{ .PageNumber }} von {{ .TotalPages }}"
 [back_to_news]
 other = "← Zur Übersicht"
-
+[share_this]
+other = "Diesen Beitrag teilen"
+[comments_title]
+other = "Kommentare"
 
 
