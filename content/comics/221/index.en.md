@@ -8,6 +8,4 @@ From a hygienic point of view, also semen.
 
 i don't really have an explanation for this? It's just things that happen.
 
-*First comic with Mark i think? He's a lot of fun to be around and knows a lot about a lot. Like music, photography, turkish culture, tea ...
-
----
+*First comic with Mark i think? He's a lot of fun to be around and knows a lot about a lot. Like music, photography, turkish culture, tea ...*
