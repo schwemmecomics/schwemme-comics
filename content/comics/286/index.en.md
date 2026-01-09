@@ -8,6 +8,4 @@ The same reason students do it.
 
 I went fully prepared to get on his nerves. In the end I almost got roped into giving a tour of the Anatomical Institute for the Long Night of Science. Talk about an unexpected turn of events.
 
-*Return of The Boots. Also, first appearance of The Couch.
-
----
+*Return of The Boots. Also, first appearance of The Couch.*
