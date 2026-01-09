@@ -8,6 +8,4 @@ Friend contact!
 
 Stonüü must have had a target on the back of his head. Suddenly, there was a firefight with beer mats.
 
-*The last comic of the beer mat escalation.
-
-___
+*The last comic of the beer mat escalation.*
