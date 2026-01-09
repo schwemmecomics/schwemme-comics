@@ -7,5 +7,3 @@ weight: 112
 Causality is a tool, not a limitation.
 
 At least regarding comics.
-
----
