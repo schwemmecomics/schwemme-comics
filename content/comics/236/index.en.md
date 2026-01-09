@@ -8,4 +8,3 @@ Don't do drugs kids. Seriously. It's why we have the non-alcoholic beverages in 
 
 As with the previous one, I compensated for my non-existing artistic talent by tracing over screenshots. These are as close to photorealistic drawings as I am able to.
 
----
