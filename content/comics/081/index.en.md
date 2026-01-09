@@ -6,9 +6,9 @@ weight: 81
 
 No one thinks about camping inside the Schwemme!
 
-A corn in a cot,
-yeah, we like thee!
-Because it's club tour,
+A corn in a cot, 
+yeah, we like thee! 
+Because it's club tour, 
 and we drink for free!
 
  - "A corn in a cot" (Original Lyrics by Bernd the Vollkornbrot, translated by Ernestito)
