@@ -8,6 +8,4 @@ May the beer be with you.
 
 Huhu is initiated during a meeting, under the premise of doing another probationary shift.
 
-*I researched more stuff for this than i want to admit. Only Steve and Frank replace specific council members, respective Mace Windu and Yoda (who else?). If the opportunity arises, I might take the idea up again.
-
----
+*I researched more stuff for this than i want to admit. Only Steve and Frank replace specific council members, respective Mace Windu and Yoda (who else?). If the opportunity arises, I might take the idea up again.*
