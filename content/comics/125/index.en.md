@@ -4,10 +4,6 @@ date: 2026-01-04
 weight: 125
 ---
 
-Stone. Vielleicht kann ich ja mit aufwändigeren Panels von meinen unkreativen Witzen ablenken._
-
-TITEL_EN: Friedens Park
-TEXT_EN:
 I'm goin' down to Schwemme gonna have myself a time,  
 "Friendly faces everwhere humble folks without temptation" 
 I'm goin' down to Schwemme gonna leave my woes behind,  
