@@ -8,4 +8,3 @@ Or trauma?
 
 Some conversations make you wonder what is going on in the minds of those involved. Especially in Veggies.
 
----
