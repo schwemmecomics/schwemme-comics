@@ -8,4 +8,4 @@ Sie fahren nicht nur, sie halten auch zusammen!
 
 Lenny fährt Nextbike und die sind weder auf Langstrecken, noch auf Steigungen ausgelegt.
 
-*Der Wortwechsel spielt auf eine Szene aus dem Zweiten HdR-Film an (Aragorn wirft Gimli). Beachtet die Schildkröte.
+*Der Wortwechsel spielt auf eine Szene aus dem Zweiten HdR-Film an (Aragorn wirft Gimli). Beachtet die Schildkröte.*
