@@ -7,5 +7,3 @@ weight: 188
 Schwemmlings have no problem with alcohol.
 
 Some Schwemmlings have a problem without alcohol.
-
----
