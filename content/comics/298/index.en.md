@@ -8,4 +8,3 @@ Some people hide their talents.
 
 Which is absolutely fine. Not everyone has to show off their abilities the way I do with my comics. 
 
----
