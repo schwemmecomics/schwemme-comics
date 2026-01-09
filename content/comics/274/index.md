@@ -8,4 +8,4 @@ Freundkontakt!
 
 Stonüü hatte wohl eine Zielscheibe am Hinterkopf. Auf einmal gabs ein Feuergefecht mit Bierdeckeln.
 
-*Der letzte Comic der Bierdeckeleskalation.
+*Der letzte Comic der Bierdeckeleskalation.*
