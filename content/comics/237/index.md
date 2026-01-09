@@ -8,4 +8,4 @@ Durch Sieben dunkle Jahre vegetieren
 Sieben Mal wirst du die Asche sein  
 Aber einmal auch der helle Schein  
 
-In der Animationsserie gibt es einen Wunschdrachen Shen Long, der erscheint, wenn man alle 7 seiner Kugeln gesammelt hat.
+In der Animationsserie Dragon Ball gibt es einen Wunschdrachen Shen Long, der erscheint, wenn man alle 7 seiner Kugeln gesammelt hat.
