@@ -6,4 +6,4 @@ weight: 71
 
 Herbicht hat zwei H!
 
-Das letzte mal, das Nico so geroastet wurde, war auf der Weihnachtsfeier 2022.
+Das letzte mal, das Nico so geroastet wurde, war auf der Weihnachtsfeier 2022 (Siehe #60).
