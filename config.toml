@@ -70,3 +70,8 @@ defaultContentLanguage = "de"
 
   # Disclaimer Footer
   disclaimer = "Alle Charaktere und Ereignisse in diesem Comic sind fiktiv. Ähnlichkeiten mit lebenden oder verstorbenen Personen oder Ereignissen sind rein zufällig."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
