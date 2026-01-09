@@ -5,5 +5,3 @@ weight: 136
 ---
 
 A comic to honour the Veti-Matrikel 2016; the Seals!
-
----
