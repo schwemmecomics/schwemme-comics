@@ -8,4 +8,3 @@ Welcome chaos! Play with the levers and bells! Anarchy!
 
 Klacki gets up to mischief when no one is watching. For once, Ernestito is not participating in the shenanigans.
 
----
