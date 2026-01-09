@@ -8,6 +8,4 @@ Official term. Sounds strange, spells strangely. Canoeists. Cnutes.
 
 From left to right: Chaos boat, board boat, fun boat.
 
-*Herbicht reads a map. Or at least tries to.
-
-___
+*Herbicht reads a map. Or at least tries to.*
