@@ -10,4 +10,3 @@ A new experiment that I had too much fun with. The old Pokemon UI is perfect for
 
 _The first comic that breaks the numbering sequence. It's actually the second one on the page._
 
----
