@@ -18,6 +18,4 @@ So come on down to Schwemme, and meet some friends of mine.
 
 New art style! I think I'll keep it. One should build up on success.
 
-*I thought of adorning myself with the feathers of someone else. In this case the feathers of Parker and Stone. Maybe I more elaborate panels will distract from my uncreative jokes.
-
----
+*I thought of adorning myself with the feathers of someone else. In this case the feathers of Parker and Stone. Maybe I more elaborate panels will distract from my uncreative jokes.*
