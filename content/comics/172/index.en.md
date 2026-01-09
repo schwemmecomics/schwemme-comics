@@ -10,4 +10,3 @@ In information technology terms: Klacki's big integer tends to cause stack overf
 
 _First mention of the running gag that Klacki has the longest. He suffers. From us and our jokes._
 
----
