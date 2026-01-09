@@ -30,6 +30,6 @@ Sure! As long as my Name/Link is shared with it, I don't mind.
 {{< /faq >}}
 
 {{< faq q="How often do you update?" >}}
-Whenever I find time for it. Mein Studium steht immer noch an erster Stelle, die Comics kommen dann irgendwann nach Essen, Schlafen und in der Schwemme Unfug treiben.
+Whenever I find time for it. My first priority are my studies and the comics then follow somewhere after eating, sleeping ans sheananigans at Schwemme.
 {{< /faq >}}
 
