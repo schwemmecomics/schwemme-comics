@@ -7,5 +7,3 @@ weight: 143
 With beer dressing
 
 Directly after Franks prophecy, there were caps found in storage again ... left there by Manni
-
----
