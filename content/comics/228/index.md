@@ -8,4 +8,4 @@ Offizieller Begriff. Klingt komisch, schreibt sich komisch. Kanuten. Knuten.
 
 Von links nach rechts: Chaosboot, Vorstandsboot, Spaßboot.
 
-*Herbicht ließt eine Karte. Oder versucht es zumindest.
+*Herbicht ließt eine Karte. Oder versucht es zumindest.*
