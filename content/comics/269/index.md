@@ -8,4 +8,4 @@ Wie wäre es, zu sagen „Ich habe gerade einen Hokusai gemacht“, statt „Ich
 
 Atilla und ich haben uns über Instrumente unterhalten, als plötzlich! Sein Bier sich verschüttete. Ohne Vorwarnung. Ohne Erklärung. 
 
-*Ich habe das natürlich aus comichaften Gründen übertrieben. Und es hat ein bisschen gedauert „Die große Welle“ richtig hinzukriegen. Außerdem ist der durchnässte Atilla bezeichnend.
+*Ich habe das natürlich aus comichaften Gründen übertrieben. Und es hat ein bisschen gedauert „Die große Welle“ richtig hinzukriegen. Außerdem ist der durchnässte Atilla bezeichnend.*
