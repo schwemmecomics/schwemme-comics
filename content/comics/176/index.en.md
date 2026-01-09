@@ -8,6 +8,4 @@ When an electric locomotive travels eastward, in which direction does the smoke 
 
 As a Zen Buddhist, Steve pays close attention to balance. Even when it comes to nicotine consumption.
 
-*Herbicht drinks a Bulmers.
-
----
+*Herbicht drinks a Bulmers.*
