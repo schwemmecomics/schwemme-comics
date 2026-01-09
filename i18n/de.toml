@@ -8,5 +8,8 @@ other = "« Zurück"
 other = "Weiter »"
 [page_info]
 other = "Seite {{ .PageNumber }} von {{ .TotalPages }}"
+[back_to_news]
+other = "← Zur Übersicht"
+
 
 
