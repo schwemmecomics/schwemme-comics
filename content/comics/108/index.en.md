@@ -6,6 +6,4 @@ weight: 108
 
 There are social conventions regarding bubble wrap. Unless one's name is Frank.
 
-*Woo, change of perspective!
-
----
+*Woo, change of perspective!*
