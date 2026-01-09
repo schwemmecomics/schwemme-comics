@@ -8,6 +8,4 @@ It's always the silliest sayings that stick best...
 
 In this case, for: histidine, isoleucine, leucine, lysine, methionine, phenylalanine, threonine, tryptophan & valine. The essential amino acids.
 
-*I wanted to create some variety by placing the characters in different locations. So, a little less copy-paste than usual.
-
-___
+*I wanted to create some variety by placing the characters in different locations. So, a little less copy-paste than usual.*
