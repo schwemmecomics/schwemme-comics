@@ -8,6 +8,4 @@ Chatter the cheerful chickens, chasing the chattering chipmunks, chattering chee
 
 Jakob and Robin discovered that Jonny hates the sound of teeth clacking together. Which, of course, we immediately used to our amusement (our = everyone except Jonny).
 
-*It's difficult to depict the jaw movement. And no, this has nothing to do with Klacki. 
-
-___
+*It's difficult to depict the jaw movement. And no, this has nothing to do with Klacki.*
