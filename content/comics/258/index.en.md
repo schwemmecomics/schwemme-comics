@@ -8,6 +8,4 @@ In the veterinarian study system, biochemistry based offenses are considered esp
 
 At some point during our studies, we approached our breaking point. 
 
-*Vetis will recognise the infamous poster lying on the table. 
-
-___
+*Vetis will recognise the infamous poster lying on the table.*
