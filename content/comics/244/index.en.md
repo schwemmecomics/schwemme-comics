@@ -10,4 +10,3 @@ Recipe: 1 part Batida de Coco to 2 parts Baileys Irish Cream
 
 Not only full of flavor, but also full of style.
 
-___
