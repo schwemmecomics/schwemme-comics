@@ -8,6 +8,4 @@ Obvious questions get obvious answers.
 
 Unfortunately, Huhu had already taken his biochemistry exam, otherwise this would have helped him too.
 
-*Applause to everyone who recognizes the molecules that Ernestito regurgitates.
-
-___
+*Applause to everyone who recognizes the molecules that Ernestito regurgitates.*
