@@ -12,6 +12,4 @@ He's back! And more inappropriate than ever!
 
 The new style really shows all of Captain Inappropriate's Indignity.
 
-*Actually a combination of several older comics. See #33, #34 TEXT_EN: #132 for comparison.
-
----
+*Actually a combination of several older comics. See #33, #34 & #132 for comparison.*
