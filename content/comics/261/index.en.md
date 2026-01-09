@@ -8,6 +8,4 @@ The hunt is on.
 
 Ernestito got someone interested in him while playing Jenga. 
 
-*A try at romantic comedy on my expense. Since Olaf is taken, I had to find something else to ship. 
-
-___
+*A try at romantic comedy on my expense. Since Olaf is taken, I had to find something else to ship.*
