@@ -10,4 +10,4 @@ In feudal Japan, Samurai were allowed to execute commoners on the spot, who insu
 
 Like for situations, where decisions of one bartender are not respected.
 
-*It took some time until I got the spectral Samurai right
+*It took some time until I got the spectral Samurai right*
