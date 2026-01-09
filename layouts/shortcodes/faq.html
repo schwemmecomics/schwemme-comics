@@ -1,37 +1,8 @@
-<div class="faq-container" style="margin-bottom: 20px;">
-  <details class="faq-details">
-    <summary class="faq-question">
-      <strong>{{ .Get "q" }}</strong>
-    </summary>
-    <div class="faq-answer">
-      {{ .Inner | markdownify }}
-    </div>
-  </details>
-</div>
-
-<style>
-  .faq-details {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    background: #f9f9f9;
-  }
-  .faq-question {
-    cursor: pointer;
-    font-size: 1.1rem;
-  }
-  .faq-answer {
-    margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-    /* Dies erzwingt den Zeilenumbruch und die normale Schriftart */
-    white-space: normal;
-    word-wrap: break-word;
-    display: block;
-  }
-  /* Verhindert, dass das Theme den Text als Code formatiert */
-  .faq-answer p, .faq-answer div {
-    font-family: inherit !important;
-    color: inherit !important;
-  }
-</style>
+<details class="faq-item" style="border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 8px; background: #fafafa;">
+  <summary style="cursor: pointer; font-weight: bold; font-family: inherit;">
+    {{ .Get "q" }}
+  </summary>
+  <section style="margin-top: 10px; border-top: 1px solid #eee; padding-top: 10px; font-family: inherit; line-height: 1.6;">
+    {{ .Inner | markdownify }}
+  </section>
+</details>
