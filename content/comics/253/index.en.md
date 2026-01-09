@@ -8,4 +8,3 @@ Fly, you fool!
 
 Torn from beautiful dreams about Olaf by biochemistry? I'd pluck Herbicht down to the last of his feathers!
 
-___
