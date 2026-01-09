@@ -2,4 +2,11 @@
 other = "→ Weiterlesen"
 [full_news]
 other = "→ Ganze Nachricht lesen"
+[prev]
+other = "« Zurück"
+[next]
+other = "Weiter »"
+[page_info]
+other = "Seite {{ .PageNumber }} von {{ .TotalPages }}"
+
 
