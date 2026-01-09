@@ -8,4 +8,4 @@ Es gibt sie diese Tage ...
 
 Ich glaube es gibt angenehmere Methoden um sich einen Krankenhausaufenthalt zu verdienen.
 
-*Gib-Ernestito werde ich genauso ausschneiden wie den Rennenden Bernhard aus #226
+*Gib-Ernestito werde ich genauso ausschneiden wie den Rennenden Bernhard aus #226*
