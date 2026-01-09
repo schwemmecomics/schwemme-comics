@@ -2,16 +2,23 @@
 <div class="news-container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
     <h1>{{ .Title }}</h1>
     
-    {{ range $index, $element := .Pages.ByPublishDate.Reverse }}
-    <article style="margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+    {{ $pages := .Pages.ByPublishDate.Reverse }}
+    {{ range $index, $element := $pages }}
+    <article style="margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px; text-align: left;">
         <header>
             <h2 style="margin-bottom: 5px;">{{ .Title }}</h2>
             <time style="color: #888; font-size: 0.9em;">{{ .Date.Format "02.01.2006" }}</time>
         </header>
         <div class="news-content" style="margin-top: 15px; line-height: 1.6;">
             {{ if eq $index 0 }}
-                {{ .Content }} {{ else }}
-                {{ .Summary }} <p><a href="{{ .RelPermalink }}" style="color: #007bff; font-weight: bold;">→ Weiterlesen</a></p>
+                {{/* Die allerneueste News immer komplett */}}
+                {{ .Content }}
+            {{ else }}
+                {{/* Alle älteren News nur als Teaser */}}
+                {{ .Summary }}
+                <p style="margin-top: 10px;">
+                    <a href="{{ .RelPermalink }}" style="color: #b58900; font-weight: bold;">→ Ganze Nachricht lesen</a>
+                </p>
             {{ end }}
         </div>
     </article>
