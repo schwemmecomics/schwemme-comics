@@ -8,6 +8,4 @@ Parents ... they have this way of supporting you, that makes you wish they would
 
 So as, in the dawn of the new day, Ernestito finally realises there's a woman in front of him, Frank, as is his ever sensible nature, reads the moment. We're writing history here.
 
-*This is one of those moments I realise I'm a fantastic writer. Fantastic, as in fantasy. 
-
-___
+*This is one of those moments I realise I'm a fantastic writer. Fantastic, as in fantasy.*
