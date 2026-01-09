@@ -8,6 +8,4 @@ But a question ... and the answer is yes.
 
 Time to chew some people down to Frank's eye level.
 
-*I think Ernestito and his sword could become a new Antihero ... Maybe the Schwemme Punisher? The Bar-venger?
-
----
+*I think Ernestito and his sword could become a new Antihero ... Maybe the Schwemme Punisher? The Bar-venger?*
