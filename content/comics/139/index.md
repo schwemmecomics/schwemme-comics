@@ -6,4 +6,4 @@ weight: 139
 
 Hunde in der Schwemme sind immer toll.
 
-_Basiert auf einem Comic von Mhuyo auf X (ehemals Twitter): https://x.com/Mhuyo/status/1516432217605554176. _
+_Basiert auf einem Comic von Mhuyo auf X (ehemals Twitter):_ https://x.com/Mhuyo/status/1516432217605554176. 
