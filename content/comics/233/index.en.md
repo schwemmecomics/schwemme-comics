@@ -8,4 +8,3 @@ The right hand of the Schwemmperor: Lord Vadders!
 
 He was a little short for a stormtrooper, but he put on his docs to pass the regulations.
 
-___
