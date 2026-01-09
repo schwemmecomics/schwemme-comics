@@ -10,5 +10,8 @@ other = "Next »"
 other = "Page {{ .PageNumber }} of {{ .TotalPages }}"
 [back_to_news]
 other = "← To news overview"
-
+[share_this]
+other = "Share this post"
+[comments_title]
+other = "Comments"
 
