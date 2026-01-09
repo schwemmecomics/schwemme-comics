@@ -8,4 +8,3 @@ Ernestito arrives in his samurai armor. For him, this is not an unusual outfit.
 
 _Jap.: Itsure daremo ga kuru! Eng.: Everyone comes eventually. If you hadn't already guessed..._
 
----
