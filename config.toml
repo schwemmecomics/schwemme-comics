@@ -11,44 +11,52 @@ defaultContentLanguage = "de"
   languageName = "Deutsch"
   weight = 1
   # Hier kommen die deutschen Menüpunkte drunter:
+    [[languages.de.menu.main]]
+    name = "Aktuelles"
+    url = "/news/"
+    weight = 1
   [[languages.de.menu.main]]
     name = "Archiv"
     url = "/comics/"
-    weight = 1
+    weight = 2
   [[languages.de.menu.main]]
     name = "Charaktere"
     url = "/characters/"
-    weight = 2
+    weight = 3
   [[languages.de.menu.main]]
     name = "Kreativarbeit"
     url = "/creative/"
-    weight = 3
+    weight = 4
   [[languages.de.menu.main]]
     name = "Über mich"
     url = "/about/"
-    weight = 4
+    weight = 5
 
 # --- ENGLISCH ---
 [languages.en]
   languageName = "English"
   weight = 2
   # Hier kommen die englischen Menüpunkte drunter:
+    [[languages.de.menu.main]]
+    name = "News"
+    url = "/news/"
+    weight = 1
   [[languages.en.menu.main]]
     name = "Archive"
     url = "/en/comics/"
-    weight = 1
+    weight = 2
   [[languages.en.menu.main]]
     name = "Characters"
     url = "/en/characters/"
-    weight = 2
+    weight = 3
   [[languages.en.menu.main]]
     name = "Creative Work"
     url = "/en/creative/"
-    weight = 3
+    weight = 4
   [[languages.en.menu.main]]
     name = "About Me"
     url = "/en/about/"
-    weight = 4
+    weight = 5
 
 [params]
   description = "Comics von Ernestito"
