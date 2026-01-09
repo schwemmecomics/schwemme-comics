@@ -29,7 +29,7 @@
     {{ if gt $paginator.TotalPages 1 }}
     <nav class="pagination" style="margin-top: 40px; text-align: center;">
         {{ if $paginator.HasPrev }}
-            <a href="{{ $paginator.Prev.URL }}" style="padding: 10px 20px; border: 1px solid #ddd; text-decoration: none;">{{ i18n "prev" } </a>
+            <a href="{{ $paginator.Prev.URL }}" style="padding: 10px 20px; border: 1px solid #ddd; text-decoration: none;">{{ i18n "prev" }} </a>
         {{ end }}
         <span style="margin: 0 15px;">{{ i18n "page_info" . }}</span>
         {{ if $paginator.HasNext }}
