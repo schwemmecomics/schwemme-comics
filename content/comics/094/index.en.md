@@ -8,6 +8,4 @@ A whiff of hydrogen sulfide.
 
 The next one in the line of ventilation comics. This time at the expense of Lenny.
 
-*I love doing little special effects. Here is a visualisation of Lennys intestinal gases.
-
----
+*I love doing little special effects. Here is a visualisation of Lennys intestinal gases.*
