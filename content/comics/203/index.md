@@ -8,4 +8,4 @@ Heißt Ra(h)o(u/o)l im Cast wilkommen! Wenn ihr dachtet, dass es schlimm war, da
 
 Das ist die typische Unterhaltung, die wir führen, wenn Rahul die Schwemme betritt. Er ruft immer vom selben Ort aus und stellt immer die wichtigen Fragen.
 
-*Ich habe nicht gescherzt, als ich sagte, dass ich schlecht mit Namen bin. Und während ich normalerweise mit Gemurmel oder Spitznamen durchkomme, muss ich sie jetzt auch noch aufschreiben!
+*Ich habe nicht gescherzt, als ich sagte, dass ich schlecht mit Namen bin. Und während ich normalerweise mit Gemurmel oder Spitznamen durchkomme, muss ich sie jetzt auch noch aufschreiben!*
