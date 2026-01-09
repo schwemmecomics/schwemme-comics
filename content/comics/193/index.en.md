@@ -8,6 +8,4 @@ Bodies of sufficient weight develop their own field of gravity.
 
 I learned this from someone who studies astrophysics... and Flo is very sufficient.
 
-*No one should be ridiculed because of their weight. Except in a satirical format.
-
----
+*No one should be ridiculed because of their weight. Except in a satirical format.*
