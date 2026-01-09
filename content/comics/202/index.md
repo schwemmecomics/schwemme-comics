@@ -8,4 +8,4 @@ weight: 202
 
 In der Schwemme tragen zwei Personen Schiebermützen, Atilla ist die zweite, die hier vorgestellt wird.
 
-*Während ich mir das anschaue, sollte ich präzisieren: Im letzten Bild zeige ich auf Atilla, der die graue Schirmmütze trägt. Nicht auf Faust, der im ersten Bild gesprochen hat.
+*Während ich mir das anschaue, sollte ich präzisieren: Im letzten Bild zeige ich auf Atilla, der die graue Schirmmütze trägt. Nicht auf Faust, der im ersten Bild gesprochen hat.*
