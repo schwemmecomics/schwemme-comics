@@ -10,6 +10,4 @@ Dogs at Schwemme are always a joyous occasion.
 
 Woah! Ernestito can draw really cute dogs!
 
-*Correction: Ernestito can rip really cute pictures from the internet and trace them for his comics. The wonders of modern technology.
-
----
+*Correction: Ernestito can rip really cute pictures from the internet and trace them for his comics. The wonders of modern technology.*
