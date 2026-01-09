@@ -8,4 +8,4 @@ Lay your Hands on mee ~~
 
 Da hatte Lenny wohl kurz mal seine Hände nicht unter Kontrolle. Oder Ben den Inhalt seiner Hose, wir wollen mal nicht vorschnell urteilen.
 
-*Ja, Bon Jovi und so.
+*Ja, Bon Jovi und so.*
