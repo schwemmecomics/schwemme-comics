@@ -8,6 +8,6 @@ weight: 59
 
 Since Frank couldn't stop his backseat mixing, he got a lot of zest in his Otterwasser.
 
-*It was interesting drawing a more complex effect. Surprising, what a few movement lines achieve.
+*It was interesting drawing a more complex effect. Surprising, what a few movement lines achieve.*
 
 ---
