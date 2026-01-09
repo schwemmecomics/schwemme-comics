@@ -8,6 +8,4 @@ weight: 202
 
 There are two people at Schwemme wearing flat caps, Atilla being the one introduced here.
 
-*While looking at this, I feel like I should clarify; in the last panel I'm pointing at Atilla, wearing the grey flat cap. Not at Faust, who was the one talking in the first panel.
-
-___
+*While looking at this, I feel like I should clarify; in the last panel I'm pointing at Atilla, wearing the grey flat cap. Not at Faust, who was the one talking in the first panel.*
