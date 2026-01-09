@@ -8,4 +8,3 @@ Chris is the name Ernestito uses to hide from Lord Vadders.
 
 Another variation of the name trope. See #6 and #205 for similar jokes.
 
-___
