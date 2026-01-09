@@ -1,8 +1,8 @@
 {{ define "main" }}
-<article style="max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.8; font-size: 1.1em;">
+<article style="max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.8; font-size: 1.1em; text-align: left;">
     <header style="margin-bottom: 30px; border-bottom: 2px solid #eee; padding-bottom: 20px;">
         <h1 style="font-size: 2.5em; margin-bottom: 10px;">{{ .Title }}</h1>
-        <time style="color: #888;">Veröffentlicht am {{ .Date.Format "02.01.2006" }}</time>
+        <time style="color: #888;">{{ .Date.Format "02.01.2006" }}</time>
     </header>
 
     <div class="news-post-content">
@@ -10,8 +10,12 @@
     </div>
 
     <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee;">
-        <a href="/news/" style="color: #007bff; text-decoration: none; font-weight: bold;">← Zurück zur Übersicht</a>
+        {{/* Dieser Link sucht dynamisch die News-Übersicht der aktuellen Sprache */}}
+        {{ with .Site.GetPage "/news" }}
+            <a href="{{ .RelPermalink }}" style="color: #b58900; text-decoration: none; font-weight: bold;">
+                {{ i18n "back_to_news" }}
+            </a>
+        {{ end }}
     </footer>
 </article>
 {{ end }}
-
