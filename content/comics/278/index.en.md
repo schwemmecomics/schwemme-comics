@@ -8,4 +8,3 @@ Schwemmlinge are professional stackers!
 
 Axel and Lenny tried out various stacking techniques to see who could could stack highest using the fewest beer mats.
 
-___
