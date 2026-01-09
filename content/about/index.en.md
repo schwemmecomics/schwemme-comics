@@ -21,15 +21,15 @@ Also good to know:
 
 ### Frequently Asked Questions (FAQ)
 
-{{% faq q="What do you use to draw the comics?" %}}
-    I draw them on my Galaxy Tab S9+ via the Samsung app "Penup".
-{{% /faq %}}
+{{< faq q="What do you use to draw?" >}}
+I draw on my Galaxy Tab S9+ and use the Samsung-App "Penup".
+{{< /faq >}}
 
-{{% faq q="Can I share the comics?" %}}
-    Sure! As long as my Name/Link is shared too, I don't mind.
-{{% /faq %}}
+{{< faq q="Can I share the comics?" >}}
+Sure! As long as my Name/Link is shared with it, I don't mind.
+{{< /faq >}}
 
-{{% faq q="How often do you release new comics?" %}}
-    Whenever I find the time. My studies are priority one, the comics follow somewhere after eating, sleeping and Shenananigans in the Schwemme.
-{{% /faq %}}
+{{< faq q="How often do you update?" >}}
+Whenever I find time for it. My first priority are my studies and the comics then follow somewhere after eating, sleeping ans sheananigans at Schwemme.
+{{< /faq >}}
 

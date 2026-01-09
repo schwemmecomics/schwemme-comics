@@ -1,0 +1,15 @@
+[read_more]
+other = "→ Weiterlesen"
+[full_news]
+other = "→ Ganze Nachricht lesen"
+[prev]
+other = "« Zurück"
+[next]
+other = "Weiter »"
+[page_info]
+other = "Seite {{ .PageNumber }} von {{ .TotalPages }}"
+[back_to_news]
+other = "← Zur Übersicht"
+
+
+
