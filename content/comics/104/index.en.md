@@ -8,6 +8,4 @@ The executive members (or club commitee?) can only be voted out at the general a
 
 Also at the table: Rio, who is studying veterinary medicine together with Bars, Olaf and Bibo.
 
-*This comic was drawn spontaneously, after I drew the first panel. I realised the original idea in the next comic. 
-
----
+*This comic was drawn spontaneously, after I drew the first panel. I realised the original idea in the next comic.*
