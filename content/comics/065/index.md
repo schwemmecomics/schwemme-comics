@@ -8,4 +8,4 @@ Wie immer sind Gäste und Clubmitglieder schmückendes Beiwerk, solange sie dem 
 
 Diddi ist ein verantwortungsbewusstes neues Schwemmemitglied und übergibt den Schlüssel meistens zum nächsten Dienst. Das macht ihn häufig zum ersten Gast.
 
-*Erster Comic mit Perspektivwechsel vor/hinter der Bar. Vielleicht etwas zu verwirrend.
+*Erster Comic mit Perspektivwechsel vor/hinter der Bar. Vielleicht etwas zu verwirrend.*
