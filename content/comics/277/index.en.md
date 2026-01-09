@@ -8,4 +8,3 @@ Some challenges are not ...
 
 At least not for computer scientists, mathematicians and physicists. I set a height and the boys were allowed to try to stack as few beer mats as high as possible.
 
-___
