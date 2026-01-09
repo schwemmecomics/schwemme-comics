@@ -8,6 +8,4 @@ A four-headed monkey!
 
 Nothing beats a classic prank. 
 
-*I think I'll cut out the Bernhard from the last panel so I can send him in chats. Universally applicable.
-
-___
+*I think I'll cut out the Bernhard from the last panel so I can send him in chats. Universally applicable.*
