@@ -8,4 +8,3 @@ Everyone come here! Pushing saves fuel costs!
 
 The differences of opinion between Frank and me continued during the clean-up. Without escalation, but with a lot of sarcasm.
 
----
