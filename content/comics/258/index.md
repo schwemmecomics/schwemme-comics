@@ -8,4 +8,4 @@ Bei den Vetis gilt die Biochemie als besonders abscheulich. In Leipzig gehören 
 
 Irgendwann während des Lernens haben wir uns der Belastungsgrenze genähert. 
 
-*Vetis werden das berüchtigte Plakat erkennen, das auf dem Tisch liegt.
+*Vetis werden das berüchtigte Plakat erkennen, das auf dem Tisch liegt.*
