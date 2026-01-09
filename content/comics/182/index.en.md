@@ -8,6 +8,4 @@ Can't find workarounds for wraparounds.
 
 Sometimes a player is inattentive and sees combinations that aren't there.
 
-*I believe Texas Hold'Em is being played?
-
----
+*I believe Texas Hold'Em is being played?*
