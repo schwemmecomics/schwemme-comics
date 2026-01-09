@@ -8,6 +8,4 @@ Welcome Ra(h)o(u/o)l to the cast! If you thought me mishearing Manav as Marlowe 
 
 This is the typical conversation we have, as he enters Schwemme. Always calling from the same place, always asking the important questions.
 
-*I was not joking when I said I am bad with names. And while normally I get by with mumbling or nicknames, I now have to write them too!
-
-___
+*I was not joking when I said I am bad with names. And while normally I get by with mumbling or nicknames, I now have to write them too!*
