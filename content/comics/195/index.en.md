@@ -10,4 +10,3 @@ How many? 195? ... oh.
 
 So I actually had to choose a selection of running gags for the last panel ... for comparison, see #69, #94, #127.
 
----
