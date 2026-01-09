@@ -8,4 +8,3 @@ A drink (partly) inspired by Klacki and created by Henning.
 
 Recipe: Equal parts Andalö and sparkling wine in a tumbler.
 
-___
