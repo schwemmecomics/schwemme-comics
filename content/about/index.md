@@ -22,6 +22,8 @@ Auch gut zu wissen:
 
 ### Häufig gestellte Fragen (FAQ)
 
+{{< faq q="Wer bist du eigentlich?" >}} Mein Name ist Chris Fachinger, in der Schwemme kennt man mich als Ernestito. Ich studiere Veterinärmedizin in Leipzig seit 2023. {{< /faq >}}
+
 {{< faq q="Womit zeichnest du die Comics?" >}}
 Ich zeichne auf meinem Galaxy Tab S9+ und nutze die Samsung-App "Penup".
 {{< /faq >}}
@@ -34,3 +36,4 @@ Klar! Solange mein Name/Link dabei bleibt, freue ich mich über jeden Share.
 Wann immer ich Zeit dafür finde. Mein Studium steht immer noch an erster Stelle, die Comics kommen dann irgendwann nach Essen, Schlafen und in der Schwemme Unfug treiben.
 {{< /faq >}}
 
+Für weitere Fragen find mich in der Schwemme oder schreib mir eine Email über: schwemme.comics@gmail.com
