@@ -21,7 +21,7 @@ Also good to know:
 
 ### Frequently Asked Questions (FAQ)
 
-{{< faq q="Who's the Person behind Schwemmecomics?" >}} My name is Chris Fachinger, at Schwemme I'm known as Ernestito. I study Veterinäry Medicine in Leipzig since 2023. {{< /faq >}}
+{{< faq q="Who's the Person behind Schwemmecomics?" >}} My name is Chris Fachinger, at Schwemme I'm known as Ernestito. I study Veterinary Medicine in Leipzig since 2023. {{< /faq >}}
 
 {{< faq q="What do you use to draw?" >}}
 I draw on my Galaxy Tab S9+ and use the Samsung-App "Penup".
