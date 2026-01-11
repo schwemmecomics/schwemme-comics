@@ -21,6 +21,8 @@ Also good to know:
 
 ### Frequently Asked Questions (FAQ)
 
+{{< faq q="Who's the Person behind Schwemmecomics?" >}} My name is Chris Fachinger, at Schwemme I'm known as Ernestito. I study Veterinäry Medicine in Leipzig since 2023. {{< /faq >}}
+
 {{< faq q="What do you use to draw?" >}}
 I draw on my Galaxy Tab S9+ and use the Samsung-App "Penup".
 {{< /faq >}}
@@ -32,4 +34,6 @@ Sure! As long as my Name/Link is shared with it, I don't mind.
 {{< faq q="How often do you update?" >}}
 Whenever I find time for it. My first priority are my studies and the comics then follow somewhere after eating, sleeping ans sheananigans at Schwemme.
 {{< /faq >}}
+
+If you have more questions, seek me out at Schwemme or send me an email to: schwemme.comics@gmail.com
 
