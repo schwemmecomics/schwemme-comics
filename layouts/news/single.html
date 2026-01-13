@@ -41,49 +41,70 @@ document.getElementById('shareBtn').addEventListener('click', async () => {
 });
 </script>
     
-    {{/* Comments */}}
+{{/* Comments */}}
 <div class="comments-wrapper" style="margin-top: 60px; padding: 20px; border-top: 2px solid #eee; text-align: left;">
     <h3 style="text-align: center;">Kommentare</h3>
     
     <div id="cusdis_thread"
       data-host="https://cusdis.com"
       data-app-id="24970c43-2814-46a1-ad48-67de2a7d85c2"
-      data-page-id="{{ .File.UniqueID }}"
+      data-page-id="{{ .File.ContentBaseName }}"
       data-page-url="{{ .Permalink }}"
       data-page-title="{{ .Title }}"
       data-theme="light"
       data-lang="{{ .Lang | default "de" }}"
+      style="width: 100%; min-height: 200px;"
     ></div>
 
-<script>
-  // Dieser kleine Zusatz zwingt Cusdis, die Sprache neu zu bewerten
-  {{ if eq .Lang "de" }}
-  window.CUSDIS_LOCALE = {
-    "powered_by": "Kommentare betrieben mit Cusdis",
-    "post_comment": "Kommentar abschicken",
-    "placeholder": "Schreib etwas...",
-    "email": "Email (optional)",
-    "nickname": "Spitzname",
-    "reply": "Antworten",
-    "mod_badge": "Autor",
-    "load_more": "Mehr laden"
-  }
-  {{ else }}
-  window.CUSDIS_LOCALE = {
-    "powered_by": "Comments powered by Cusdis",
-    "post_comment": "Submit",
-    "placeholder": "Write something...",
-    "email": "Email (optional)",
-    "nickname": "Nickname",
-    "reply": "Reply",
-    "mod_badge": "Author",
-    "load_more": "Load more"
-  }
-  {{ end }}
-</script>
+    <style>
+        /* Verhindert die Scrollbar innerhalb des Cusdis-Bereichs */
+        #cusdis_thread iframe {
+            width: 100% !important;
+            height: auto !important;
+            min-height: 200px;
+            overflow: hidden !important;
+        }
+    </style>
+
+    <script>
+      window.CUSDIS_LOCALE = {{ if eq .Lang "de" }}
+      {
+        "powered_by": "Kommentare betrieben mit Cusdis",
+        "post_comment": "Kommentar abschicken",
+        "placeholder": "Schreib etwas...",
+        "email": "Email (optional)",
+        "nickname": "Spitzname",
+        "reply": "Antworten",
+        "mod_badge": "Autor",
+        "load_more": "Mehr laden"
+      }
+      {{ else }}
+      {
+        "powered_by": "Comments powered by Cusdis",
+        "post_comment": "Submit",
+        "placeholder": "Write something...",
+        "email": "Email (optional)",
+        "nickname": "Nickname",
+        "reply": "Reply",
+        "mod_badge": "Author",
+        "load_more": "Load more"
+      }
+      {{ end }};
+
+      // Automatisches Resize-Skript für den Iframe
+      window.addEventListener('message', e => {
+        if (e.data.type === 'cusdis:height') {
+          const iframe = document.querySelector('#cusdis_thread iframe');
+          if (iframe) {
+            iframe.style.height = e.data.data + 'px';
+          }
+        }
+      });
+    </script>
     
     {{/* Das Cusdis-Skript */}}
     <script async defer src="{{ "js/cusdis.js" | relURL }}"></script>
+</div>
     
     <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee;">
         {{/* Dieser Link sucht dynamisch die News-Übersicht der aktuellen Sprache */}}
