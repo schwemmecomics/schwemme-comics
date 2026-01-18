@@ -3,7 +3,7 @@ title: "About Me"
 layout: "page"
 ---
 
-![Mein Profilbild](/images/mein-profil.jpg)
+![Mein Profilbild](mein-profil.jpg)
 
 # Welcome to Tales From The Schwemme!
 A collection of sequential art, which tries to commemorate anecdotes and peculiarities from the **Schwemme** and the people there.

@@ -3,7 +3,7 @@ title: "Über mich"
 layout: "page"
 ---
 
-![Mein Profilbild](/images/mein-profil.jpg)
+![Mein Profilbild](mein-profil.jpg)
 
 # Willkommen zu Geschichten aus Der Schwemme!
 Eine Sammlung an sequentieller Kunst, die versucht Anekdoten aus der **Schwemme** und Eigenheiten der Schwemmlinge humorvoll festzuhalten. 
