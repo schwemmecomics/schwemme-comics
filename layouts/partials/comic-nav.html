@@ -6,10 +6,10 @@
         <img src="{{ "images/first.png" | relURL }}" alt="First" style="width: 40px; height: auto;">
     </a>
 
-    {{/* Previous */}}
-    {{ if .PrevInSection }}
-        <a href="{{ .PrevInSection.Permalink }}">
-            <img src="{{ "images/previous.png" | relURL }}" alt="Previous" style="width: 40px; height: auto;">
+    {{/* Next */}}
+    {{ if .NextInSection }}
+        <a href="{{ .NextInSection.Permalink }}">
+            <img src="{{ "images/previous.png" | relURL }}" alt="Next" style="width: 40px; height: auto;">
         </a>
     {{ end }}
 
@@ -19,10 +19,10 @@
         <img src="{{ "images/random.png" | relURL }}" alt="Random" style="width: 40px; height: auto;">
     </a>
 
-    {{/* Next */}}
-    {{ if .NextInSection }}
-        <a href="{{ .NextInSection.Permalink }}">
-            <img src="{{ "images/next.png" | relURL }}" alt="Next" style="width: 40px; height: auto;">
+    {{/* Previous */}}
+    {{ if .PrevInSection }}
+        <a href="{{ .PrevInSection.Permalink }}">
+            <img src="{{ "images/next.png" | relURL }}" alt="Previous" style="width: 40px; height: auto;">
         </a>
     {{ end }}
 
