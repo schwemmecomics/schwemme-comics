@@ -6,6 +6,10 @@ on:
   push:
     branches: ["main"]
 
+# AUTOMATISIERUNG: Baut die Seite jeden Morgen um 06:00 Uhr deutscher Zeit (05:00 UTC)
+  schedule:
+    - cron: '0 5 * * *'
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
