@@ -1,5 +1,5 @@
 ---
-title: "Deal with him
+title: "Deal with him"
 date: 2026-03-13
 weight: 310
 ---
