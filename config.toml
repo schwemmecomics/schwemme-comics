@@ -11,6 +11,9 @@ defaultContentLanguage = "de"
 [languages.de]
   languageName = "Deutsch"
   weight = 1
+  [languages.de.outputs]
+    home = ["HTML", "RSS"]
+    
   # Hier kommen die deutschen Menüpunkte drunter:
     [[languages.de.menu.main]]
     name = "Aktuelles"
@@ -37,6 +40,8 @@ defaultContentLanguage = "de"
 [languages.en]
   languageName = "English"
   weight = 2
+  [languages.en.outputs]
+    home = ["HTML", "RSS"]
   # Hier kommen die englischen Menüpunkte drunter:
   [[languages.en.menu.main]]
     name = "News"
