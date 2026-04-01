@@ -14,5 +14,13 @@
                 <a href="/">DE</a> | <strong>EN</strong>
             {{ end }}
         {{ end }}
+
+{{ with .OutputFormats.Get "RSS" }}
+    <a href="{{ .RelPermalink }}" target="_blank" title="RSS Feed ({{ $.Language.LanguageName }})">
+        RSS ({{ $.Language.Lang | upper }})
+    </a>
+{{ end }}
+        
     </p>
 </footer>
+
