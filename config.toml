@@ -59,6 +59,10 @@ defaultContentLanguage = "de"
     url = "/en/about/"
     weight = 5
 
+[outputs]
+# RSS Feed
+  home = ["HTML", "RSS"]
+
 [params]
   description = "Comics von Ernestito"
   header_image = "images/header.png"
