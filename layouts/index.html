@@ -13,7 +13,7 @@
             <a href="{{ $latest.Permalink }}">
                 {{ $comicImg := $latest.Resources.GetMatch (printf "comic.%s.*" .Lang) | default ($latest.Resources.GetMatch "comic.*") }}
                 {{ if $comicImg }}
-                    {{/* Den Haupt-Comic lassen wir groß, aber optimieren ihn für die Web-Ansicht */}}
+                    {{/* Den Haupt-Comic lassen wir groß */}}
                     {{ $large := $comicImg.Resize "1200x" }}
                     <img src="{{ $large.RelPermalink }}" alt="{{ $latest.Title }}" style="max-width: 100%; height: auto; box-shadow: 0 10px 30px rgba(0,0,0,0.15); border-radius: 12px;">
                 {{ end }}
@@ -21,7 +21,7 @@
         </div>
     {{ end }}
 
-   {{/* NEU: Die aktuellste News-Meldung anzeigen */}}
+   {{/* Die aktuellste News-Meldung anzeigen */}}
     {{ $news := where .Site.RegularPages "Section" "news" }}
     {{ range first 1 $news.ByDate.Reverse }}
         <div class="latest-news-home" style="max-width: 800px; margin: 40px auto; background: #fdf6e3; border-left: 5px solid #b58900; padding: 20px; border-radius: 8px; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
@@ -35,24 +35,20 @@
     {{ end }}
 
     <hr style="border: 0; border-top: 2px solid #f0f0f0; margin: 60px 0;">
-    
-    <hr style="border: 0; border-top: 2px solid #f0f0f0; margin: 60px 0;">
 
-    {{/* Archiv-Galerie mit automatischem Zuschnitt */}}
-        {{/* Archiv-Vorschau: Nur noch die letzten 6 weiteren Strips */}}
-    <h3 style="margin-bottom: 30px; font-size: 1.8em;">Comics</h3>
+    {{/* Archiv-Vorschau: Nur noch die letzten 6 weiteren Strips */}}
+    <h3 style="margin-bottom: 30px; font-size: 1.8em;">Vorherige Comics</h3>
     
     <div class="comic-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 30px; margin-bottom: 50px;">
-        {{/* Wir nehmen nur 6 Stück, nachdem wir den allerneuesten (after 1) übersprungen haben */}}
         {{ range first 6 (after 1 $comics.ByDate.Reverse) }}
-            <div class="archive-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: transform 0.3s ease;">
+            <div class="archive-card" style="background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
                 <a href="{{ .Permalink }}" style="text-decoration: none; color: inherit;">
                     {{ $thumbRaw := .Resources.GetMatch (printf "comic.%s.*" .Lang) | default (.Resources.GetMatch "comic.*") }}
                     {{ if $thumbRaw }}
                         {{ $thumb := $thumbRaw.Fill "600x400 Center" }}
-                        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" style="width: 100%; height: auto; display: block;">
+                        <img src="{{ $thumb.RelPermalink }}" alt="{{ .Title }}" style="width: 100%; height: auto; display: block;" loading="lazy">
                     {{ end }}
-                    <div style="padding: 15px; border-top: 1px solid #eee;">
+                    <div style="padding: 15px; border-top: 1px solid #eee; text-align: left;">
                         <strong style="display: block; margin-bottom: 5px; color: #333;">{{ .Title }}</strong>
                         <small style="color: #999; font-family: monospace;">#{{ .File.ContentBaseName }}</small>
                     </div>
@@ -61,16 +57,13 @@
         {{ end }}
     </div>
 
-    {{/* Der "Erlösungs-Button" zum kompletten Archiv */}}
+    {{/* Der Button zum kompletten Archiv */}}
     <div style="margin: 60px 0 40px 0;">
-        <a href="/comics/" style="display: inline-block; padding: 15px 40px; background: #333; color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1em; transition: background 0.2s;">
-            {{ if eq .Lang "de" }}➔ Zum kompletten Comic-Archiv (300+ Strips){{ else }}➔ View Full Comic Archive (300+ Strips){{ end }}
+        <a href="/comics/" style="display: inline-block; padding: 15px 40px; background: #333; color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1em;">
+            {{ if eq .Lang "de" }}➔ Zum kompletten Archiv ({{ len $comics }} Strips){{ else }}➔ View Full Archive ({{ len $comics }} Strips){{ end }}
         </a>
     </div>
 
 </section>
 {{ end }}
 
-    </div>
-</section>
-{{ end }}
