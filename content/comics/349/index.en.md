@@ -1,6 +1,6 @@
 ---
 title: "Schwemme Soccer Team"
-date: 2026-08-016
+date: 2026-08-16
 weight: 349
 ---
 
