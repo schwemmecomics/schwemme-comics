@@ -13,6 +13,15 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ .Permalink }}">
 
+    {{/* SEO Meta-Description mit automatischem Fallback */}}
+  {{ $description := .Site.Params.description }}
+  {{ if .Description }}
+    {{ $description = .Description }}
+  {{ else if .Summary }}
+    {{ $description = .Summary | plainify | chomp }}
+  {{ end }}
+  <meta name="description" content="{{ $description }}">
+
     {{/* Bild-Vorschau Logik */}}
     {{ $comicImg := .Resources.GetMatch "comic.*" }}
     {{ if $comicImg }}
