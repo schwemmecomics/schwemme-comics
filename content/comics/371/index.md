@@ -6,4 +6,4 @@ weight: 371
 
 Meine zwei Lieblingswörter in Plattdeutsch sind "Gedöns" und "Iesentosamenballermaschien". Mein Lieblings-Moers ist Walter Moers.
 
-Außerdem am heutigen Tage: Das Svenni-Special, wo wir extra für unsere Schwemme-Mutti eine Freitagsöffnung machen.
+Außerdem heute: Svenni-Ehrentag. Eigentlich hatten wir geplant, dass unsere Schwemme-Mutti heute hinter der Bar steht, aber leider kann sie erst im Dezember dabei sein. Trotzdem: Alles Gute zum Ehrentag, Svenni!
